@@ -1,0 +1,181 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "TM Resources";
+}
+<div class="content-wrapper panel main-panel">
+    <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+       // Html.RenderPartial("_Announcements", new Announcement());
+        Html.RenderPartial("_PageHeader");
+        string fname;
+}
+    <style type="text/css"  >
+        .child{
+        }
+        .rootNode{
+            /*cursor:pointer;*/
+        }
+        .title-descr{
+            color:blue;
+            font-size:12px;
+        }
+        .ul-job-aids{
+            list-style:none;
+        }
+    </style>
+        <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <section>
+                <div class="panel-body">
+                    <h2 class="rootNode"> Instructor Training Course (ITC) Job Aids </h2>
+                    <p class="title-descr">
+                        The purpose of the online Instructor Training Course (ITC) is to provide VBA trainers with the knowledge and skills to conduct training effectively. The target population is any VBA trainer who has not received any formal instructor training.  The ITC Job Aids listed below were pulled from the online ITC course.
+                    </p>
+                    <ul class="ul-job-aids" >
+                        <li >
+                            <h3>Training Fundamentals</h3>
+                            <ul class="ul-job-aids" >
+                                <li >@{fname = "Events of Instruction Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })</li>
+                                <li >@{fname = "Action and Verbs Quick List";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname+".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Training Methods Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf"} , new {title=fname})</li>
+                                <li >@{fname = "Training Approaches Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "References";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Fundamentals of Training Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Mindmap Job Aid";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Incorporating Adult Learning Principles";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                            </ul>
+                        </li>
+                        <li >
+                            <h3>Classroom-Based Aids</h3>
+                            <ul  class="ul-job-aids" >
+                                <li >@{fname = "Tips to Avoid “Death by PowerPoint”";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "The Art of Asking Questions";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Instructor Introduction";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Disruptive Personalities";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Disruptive Behaviors";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "When to Ask Questions Resource";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Types of Questions Resource";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Training Preparation Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Y-Chart for Giving Feedback";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Disruptive Behaviors Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Classroom Training Media";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Training Activities - Classroom Energizers";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Training Activities - Classroom Activity Break";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Technological Challenges";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Sample Instructor Lesson Plan";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Responding with Rapport";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Power 1-2-3 Pacing Tool";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Best Practices “Do” Job Aid";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Best Practices “Do Not” Job Aid";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Exercise - Incorporating Adult Learning Principles";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Case Study - Students Don’t Know Anything";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                            </ul>
+                        </li>
+                        <li >
+                            <h3>Distributed Learning Aids</h3>
+                            <ul  class="ul-job-aids">
+                                <li >@{fname = "The Art of Asking Questions";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + " in DL.pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Technical Challenges";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Placeholder PowerPoint Slides";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Sample of Instructor Lesson Plan";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Implementing Training Methods";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Media Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Strengths and Weaknesses";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Responding with Rapport";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + " in DL.pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Disruptive Personalities";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + " in DL.pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Example of Incorporating Adult Learning Principles";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + " in DL.pdf" }, new {title=fname})</li>
+                            </ul>
+                        </li>
+                        <li >
+                            <h3>Instructor Evaluation Aids</h3>
+                            <ul class="ul-job-aids">
+                                <li >@{fname = "Distance Learning Instructor Evaluation";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "Distance Learning Instructor Evaluation.pdf" }, new {title=fname})</li>
+                                <li >@{fname = "Classroom Instructor Evaluation";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "Classroom Instructor Evaluation.pdf" }, new {title=fname})</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 class="rootNode" >Lync Job Aids</h2>
+                    <ul class="ul-job-aids" >
+                        <li >@{fname = "Join a Lync Meeting via Web or Lync Attendee";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.a "+fname+".pptx" }, new {title=fname})</li>
+                        <li >@{fname = "Local Administration Documentation for Lync";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.b "+fname+".pptx" }, new {title=fname})</li>
+                        <li >@{fname = "Lync 2010 Attendant Quick Reference";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.c "+fname+".doc" }, new {title=fname})</li>
+                        <li >@{fname = "Lync 2010 Attendee Quick Reference";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.d "+fname+".doc" }, new {title=fname})</li>
+                        <li >@{fname = "Lync 2010 Conferencing Quick Reference";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.e "+fname+".doc" }, new {title=fname})</li>
+                        <li >@{fname = "Lync 2010 Instant Messaging and Presence Quick Reference";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.f "+fname+".doc" }, new {title=fname})</li>
+                        <li >@{fname = "Lync 2010 Sharing and Collaboration Quick Reference";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.g "+fname+".doc" }, new {title=fname})</li>
+                    </ul>
+                    <h2 class="rootNode">References</h2>
+                    <ul class="ul-job-aids" >
+                        <li >@{fname = "VA Training References";}@Html.ActionLink(fname, "Placeholder", "Home", null, new { title = fname, @class = "thumbnaildisabled"  })</li>
+                        <li >@{fname = "Other VA References";}@Html.ActionLink(fname, "Placeholder", "Home", null, new { title = fname, @class = "thumbnaildisabled" })</li>
+                        <li ><h3>Glossary</h3></li>
+                        <li >
+                            <ul class="ul-job-aids" >
+                                @*<li >@{fname = "Link to VA Acronyms Website";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.3.3.a " + fname + ".docx"}, new { title = fname })</li>*@
+                                <li ><a href="http://vaww.va.gov/acronyms/fulllist.cfm#V" target="_blank" >VA Acronyms Website</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 class="rootNode">Skill Certification</h2>
+                    <ul class="ul-job-aids" >
+                        <li >@{fname = "FL 12-19 Skill Certification";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.1 " + fname + ".doc" }, new {title=fname})</li>
+                        <li >@{fname = "FL 12-19 Skill Certification Enclosure";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.2 " + fname + ".doc" }, new {title=fname})</li>
+                        <li >@{fname = "OFO E-mail with Instructions";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.3 " + fname + ".docx" }, new {title=fname})</li>
+                        <li >@{fname = "Public Law 110";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.4 " + fname + ".doc" }, new {title=fname})</li>
+                        @*<li >@{fname = "Article 67 Skill Certification";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.5 " + fname + ".docx" }, new {title=fname})</li>*@
+                        <li ><a href="https://vaww.portal.va.gov/sites/portlandvaro/TM%20Training%20Needs%20Committee/TMRC%20Docs/TMRC%20Content%20and%20Structure%20March%202014/4-Job%20Aids/4.4--Skill%20Certification%20Documents/4.4.5-Article67--Skill%20Cert.pdf" target="_blank"   >Article 67 Skill Certification</a></li>                       
+                    </ul>
+                    <h2 class="rootNode">Training Manager (TM) Job Aids</h2>
+                    <ul class="ul-job-aids" >
+                        <li >@{fname = "Training Manager (TM) Job Aids";}@Html.ActionLink(fname, "Placeholder", "Home", null, new { title= fname,@class="thumbnaildisabled" })</li>
+                    </ul>
+                    <h2 class="rootNode" >Useful Links</h2>
+                    <ul class="ul-job-aids" >
+                        <li >
+                            <h3>Reader's Corner</h3>
+                            <ul class="ul-job-aids" >
+                                <li >
+                                    <h4>Leadership Topics</h4>
+                                    <ul class="ul-job-aids"   >       
+                                        <li >@{fname = "5 Ways to Be a Motivating Leader";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "5 Ways to Be a Motivating Leader.docx" }, new { title = fname })</li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <h4>Learning Topics</h4>
+                                    <ul class="ul-job-aids" >
+                                        <li >@{fname = "";}@Html.ActionLink("Competency-Based Training article", "DownloadFile", new { dev = ViewBag.Dev, filename = "4.6.1.b.a Competency-Based Training Article.doc" }, new {title=fname})</li>
+                                        <li >@{fname = "";}@Html.ActionLink("Learning Is the Master Skill .docx", "DownloadFile", new { dev = ViewBag.Dev, filename = "4.6.1.b.b Learning Is the Master Skill.docx" }, new {title=fname})</li>
+                                        <li >@{fname = "The Learning and Performance";}<a href="https://vaww.portal.va.gov/sites/portlandvaro/TM%20Training%20Needs%20Committee/TMRC%20Docs/TMRC%20Content%20and%20Structure%20March%202014/4-Job%20Aids/4.6--Useful%20Links/4.6.1--Reader%27s%20Corner/4.6.1b--Learning%20Topics/The-Learning-and-Performance-Link--The-Case-for-Performance-Toolkits.pdf" target="_blank" title=@fname>The Learning and Performance</a></li>
+                                        <li >@{fname = "Reference Guide for Instructors and Facilitators";}<a href="https://vaww.portal.va.gov/sites/portlandvaro/TM%20Training%20Needs%20Committee/TMRC%20Docs/TMRC%20Content%20and%20Structure%20March%202014/4-Job%20Aids/4.6--Useful%20Links/4.6.1--Reader%27s%20Corner/4.6.1b--Learning%20Topics/TrainerRefGuide.pdf" target="_blank" title=@fname>@fname</a></li>
+                                        <li >@{fname = "Training vs Learning";}<a href="https://vaww.portal.va.gov/sites/portlandvaro/TM%20Training%20Needs%20Committee/TMRC%20Docs/TMRC%20Content%20and%20Structure%20March%202014/4-Job%20Aids/4.6--Useful%20Links/4.6.1--Reader%27s%20Corner/4.6.1b--Learning%20Topics/Training%20vs%20Learning%20(2).pdf" target="_blank" title=@fname>@fname</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+        $(document).ready(function () {
+
+            $('#section-root h2').next('.child').slideToggle(0);
+
+            $('#section-root h2').click(function () {
+
+                $(this).next('.child').slideToggle(100);
+
+            });
+        });
+    </script>
+}

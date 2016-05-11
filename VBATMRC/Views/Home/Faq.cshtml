@@ -1,0 +1,81 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "FAQs";
+}
+
+
+    
+@section styles
+{
+        <style type="text/css">
+            .answer {
+                font-family: Arial,Verdana;
+                font-size: 12px;
+            }
+
+            .question {
+                cursor: pointer;
+                font-family: 'Times New Roman';
+                font-size: 16px;
+                color: red;
+            }
+
+            #faq-ulist {
+                list-style: none;
+            }
+        </style>
+    }
+
+<div class="content-wrapper panel main-panel">
+    <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+        //Html.RenderPartial("_Announcements", new Announcement());
+        Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <div class="panel-body">
+                
+                <h6 style="float: right; color: #808080;">Last Updated: 7/8/14</h6>
+                @*<section id="faq-list">
+                    <ul id="faq-ulist">
+                        <li>
+                            <h3 class="question">Question 1?</h3>
+                            <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </li>
+                        <li>
+                            <h3 class="question">Question 2?</h3>
+                            <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </li>
+                        <li>
+                            <h3 class="question">Question 3?</h3>
+                            <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </li>
+                    </ul>
+                </section>*@
+                <img src="~/images/underConstruction.gif" title="The page is under construction." alt="The page is under construction." />              
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+        $(document).ready(function () {
+
+            $('#faq-list h3').next('.answer').slideToggle(0);
+
+            $('#faq-list h3').click(function () {
+
+                $(this).next('.answer').slideToggle(500);
+
+            });
+        });
+    </script>
+}

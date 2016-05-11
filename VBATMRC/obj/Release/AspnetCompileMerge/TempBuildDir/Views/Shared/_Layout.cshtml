@@ -1,0 +1,115 @@
+﻿@using System.Web.Optimization
+@using Syncfusion.Mvc.Shared
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title -</title>
+    <link href="~/favicon.ico" rel="shortcut icon"
+        type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/bscss")
+
+    @Styles.Render("~/Content/css")
+    @*@Styles.Render("http://nttlsrv01/VBAResourceStore/Content/site.css");*@
+
+    @RenderSection("styles", required: false)
+    @*    <style type="text/css">
+        .vert-line {
+            float: left;
+            margin-left: 26px;
+            margin-right: 10px;
+            width: 1px;
+            height: 66px;
+            background-color: #ffffff;
+        }
+
+        .site-title {
+            padding-left: 0;
+            margin: 0;
+            line-height: 22px;
+        }
+    </style>*@
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    @(Html.Syncfusion().StyleManager().Combine(false).Minify(false)
+        .Register(component =>
+            {
+                component.Add(ComponentType.Grid);
+                component.Add(ComponentType.Chart);
+                component.Add(ComponentType.Accordion);
+                component.Add(ComponentType.Schedule);
+
+            }))
+</head>
+<body>
+    <header>
+        <div class="content-wrapper container">
+            <div class="pull-left col-xs-6">
+                <div id="VBAlogo" class="pull-left logo">
+                    <a href="http://www.va.gov" style="background: none;"
+                       title="Go to va.gov">
+                        <img src="~/Images/logo.png" style="border: none;"
+                             alt="Official seal of the United States Department of Veterans Affairs" /></a>
+                </div>
+            
+                <div class="vert-line"></div>
+                <h1 class="site-title">VBA Learning Portal </h1> 
+                   
+               
+            </div>
+            <!-- SEARCH BOX -->
+@*            <div class="pull-right hidden-xs" role="search" style="background-color: transparent; width: 222px">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control "
+                        placeholder="Search">
+                    <span class="input-group-btn input-sm">
+                        <button type="button" class="btn btn-sm btn-info ">
+                            <span class="glyphicon glyphicon-search">
+                            </span>
+                        </button>
+                    </span>
+
+                </div>
+            </div>*@
+            <!--END SEARCH BOX -->
+        </div>
+    </header>
+    <div id="body">
+
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix container">
+            @RenderBody()
+        </section>
+    </div>
+
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>
+                    &copy; @DateTime.Now.Year - @ViewBag.Title
+                </p>
+            </div>
+            <div class="float-right">
+                <p>v.0.0.0.007a</p>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+
+    @{Html.Syncfusion().ScriptManager().Combine(true).Minify(true).Render();}
+
+    <script type="text/javascript">
+        $(function () {
+            $('#page').css("min-height", $(document).height());
+        });
+    </script>
+</body>
+</html>

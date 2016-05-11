@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Msg>
+    <Title>New Announcement Feature! </Title>
+    <Body>The announcement balloon appears every time users visit the home page.  The megaphone icon (above right) opens and closes the balloon.</Body>
+    <Link>    </Link>
+    <Path>C:\_SRC\branches\src\TMRC\Robert\VBATMRC\App_Data</Path>
+  </Msg>
+  <Msg>
+    <Title>TM Conference Call</Title>
+    <Body>Mark your calendar to attend the monthly TM conference call. The conference calls are held on the fourth Tuesday of each month, from 2-3 p.m. ET</Body>
+    <Link>   </Link>
+    <Path>C:\_SRC\branches\src\TMRC\Robert\VBATMRC\App_Data</Path>
+  </Msg>
+  <Msg>
+    <Title>Welcome to the TMRC!</Title>
+    <Body>The TMRC provides Training Managers with information on duties and responsibilities, job aids, training and other materials.</Body>
+    <Link>   </Link>
+    <Path>C:\_SRC\branches\src\TMRC\Robert\VBATMRC\App_Data</Path>
+  </Msg>
+</Root>

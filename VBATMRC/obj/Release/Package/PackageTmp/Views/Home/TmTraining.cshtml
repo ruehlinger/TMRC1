@@ -1,0 +1,45 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "TM Training";
+}
+
+@section styles
+{
+
+}
+
+<div class="content-wrapper panel main-panel">
+        <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+        //Html.RenderPartial("_Announcements", new Announcement());
+        Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper panel main-panel">
+        <div class="presentationPanel01">
+            <div class="panel-body  ">
+
+                <h6 style="float: right; color: #808080;">Last Updated: 7/8/14</h6>
+                @*<section>
+                    <ul class="list-group">
+                        <li class="list-group-item"><h3><a href="~/Home/Placeholder" class="thumbnaildisabled" target="_self" title="New TM Training">New TM Training</a></h3></li>
+                        <li class="list-group-item"><h3><a href="~/Home/Placeholder/@ViewBag.Dev.ToString()" class="thumbnaildisabled" target="_self" title="Advanced Team Training">Advanced TM Training</a></h3></li>
+                        <li class="list-group-item"><h3><a href="~/Home/Placeholder/@ViewBag.Dev.ToString()" class="thumbnaildisabled" target="_self" title="Optional Team Training">Optional TM Training</a></h3></li>
+                    </ul>
+                </section>*@
+                <img src="~/images/underConstruction.gif" title="The page is under construction." alt="The page is under construction." />   
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+    </script>
+}

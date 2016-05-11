@@ -1,0 +1,111 @@
+﻿@using System
+
+@using VBATMRC.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon"
+          type="image/x-icon" />
+
+    @Styles.Render("~/bundles/bscss")
+    @*@Styles.Render("~/bundles/calcss")*@
+    <!--[if lte IE 9]>
+            <link href="~/Scripts/boxsizing.htc" rel="text/x-component">
+            <script src="~/Scripts/html5shiv.js"></script>
+        <![endif]-->
+    @{
+        ViewBag.SiteTitle = "VBA Training Manager Resource Center";
+        ViewBag.Version = "v.2.1d";
+        ViewBag.LastUpdate = "JULY 18 2014";
+
+        var browser = Request.Browser;
+        ViewBag.Browser = browser;
+        var nogo = (browser.Browser == "IE" && browser.Version == "7.0");
+        if (nogo)
+        {
+            @Styles.Render("~/bundles/css-ie7");
+            @Styles.Render("~/bundles/bscss-ie7");
+        }
+        else if (browser.Browser == "IE" && browser.Version == "8.0")
+        {
+            @Styles.Render("~/bundles/css");
+            @Styles.Render("~/bundles/css-ie8");
+        }
+        else
+        {
+            @Styles.Render("~/bundles/css");
+        }
+    }
+
+
+
+
+    @*@Styles.Render("http://nttlsrv01/VBAResourceStore/Content/site.css");*@
+
+    @RenderSection("styles", required: false)
+
+
+
+   @* @(Html.Syncfusion().StyleManager().Combine(false).Minify(false)
+        .Register(component =>
+            {
+                component.Add(ComponentType.Grid);
+                component.Add(ComponentType.Chart);
+                component.Add(ComponentType.Accordion);
+                component.Add(ComponentType.Schedule);
+
+            })
+    )*@
+
+    
+</head>
+<body>
+   
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix container">
+            @if (!nogo)
+            {
+
+
+                @RenderBody();
+            }
+            else
+            {
+                Html.RenderPartial("_NonCompliant", new Announcements());
+            }
+        </section>
+
+        @* @RenderSection("featured", required: false)*@
+
+    </div>
+
+   
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/respond")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/bootstrap")
+    
+    
+    @Scripts.Render("~/bundles/cal")
+    
+    @Scripts.Render("~/bundles/accord")
+
+
+    @*@{Html.Syncfusion().ScriptManager().Combine(true).Minify(true).Render();}*@
+
+    <script type="text/javascript">
+        $(function () {
+            $('#page').css("min-height", $(document).height());
+        });
+    </script>
+        @Scripts.Render("~/bundles/sitejs")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

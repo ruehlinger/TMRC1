@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{475C278A-13B5-4A17-887E-FCE959CF34AE}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VBATMRC</RootNamespace>
+    <AssemblyName>VBATMRC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxMin, Version=4.57.4561.28951, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Utils.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Announcement.cs" />
+    <Compile Include="Models\Announcements.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\New Announcement Feature.txt" />
+    <Content Include="App_Data\TM Summer Learning.txt" />
+    <Content Include="App_Data\Welcome.txt" />
+    <Content Include="App_Data\xmlFile.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Assets\Documents\Standardized_WBT_TemplateOct2014.jpg" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="Content\bootstrap-ie7.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Colors.css" />
+    <Content Include="Content\fullcalendar.css" />
+    <Content Include="Content\fullcalendar.print.css" />
+    <Content Include="Content\SiteIE7.css" />
+    <Content Include="Content\SiteLocal.css" />
+    <Content Include="Content\SiteLocalIE8.css" />
+    <Content Include="Content\themes\base\images\ui1.png" />
+    <Content Include="Content\themes\base\images\ui2.png" />
+    <Content Include="Content\themes\base\images\ui3.png" />
+    <Content Include="Content\themes\base\images\ui4.png" />
+    <Content Include="Content\themes\base\images\ui5.png" />
+    <Content Include="Content\themes\base\images\ui8.png" />
+    <Content Include="Content\themes\base\images\ui6.png" />
+    <Content Include="Content\themes\base\images\ui7.png" />
+    <Content Include="Content\themes\base\images\ui9.png" />
+    <Content Include="Content\themes\base\images\ui13.png" />
+    <Content Include="Content\themes\base\images\ui10.png" />
+    <Content Include="Content\themes\base\images\ui11.png" />
+    <Content Include="Content\themes\base\images\ui12.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui1.png" />
+    <Content Include="Content\themes\base\minified\images\ui2.png" />
+    <Content Include="Content\themes\base\minified\images\ui3.png" />
+    <Content Include="Content\themes\base\minified\images\ui4.png" />
+    <Content Include="Content\themes\base\minified\images\ui5.png" />
+    <Content Include="Content\themes\base\minified\images\ui8.png" />
+    <Content Include="Content\themes\base\minified\images\ui6.png" />
+    <Content Include="Content\themes\base\minified\images\ui7.png" />
+    <Content Include="Content\themes\base\minified\images\ui9.png" />
+    <Content Include="Content\themes\base\minified\images\ui13.png" />
+    <Content Include="Content\themes\base\minified\images\ui10.png" />
+    <Content Include="Content\themes\base\minified\images\ui11.png" />
+    <Content Include="Content\themes\base\minified\images\ui12.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\tmrcLocal.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Icon.png" />
+    <Content Include="Images\bg-explore-form.jpg" />
+    <Content Include="Images\bg-header.jpg" />
+    <Content Include="Images\bg-middle-effect.png" />
+    <Content Include="Images\BG.png" />
+    <Content Include="Images\calendar-google.png" />
+    <Content Include="Images\CompMode.png" />
+    <Content Include="Images\CompTools.jpg" />
+    <Content Include="Images\CompTools.png" />
+    <Content Include="Images\disabled.jpg" />
+    <Content Include="Images\document.PNG" />
+    <Content Include="Images\enabled.jpg" />
+    <Content Include="Images\Estudio.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\icoLP00.png" />
+    <Content Include="Images\IcoSearch.jpg" />
+    <Content Include="Images\icoTileAnnouncement.png" />
+    <Content Include="Images\icoTileAnnouncement00.png" />
+    <Content Include="Images\icoTileAnnouncement01.png" />
+    <Content Include="Images\icoTileCaledar.png" />
+    <Content Include="Images\icoTileCluster.png" />
+    <Content Include="Images\icoTileFAQ.png" />
+    <Content Include="Images\icoTileFolderResource00.png" />
+    <Content Include="Images\icoTileGroupCluster.png" />
+    <Content Include="Images\icoTileHandleWithCare.png" />
+    <Content Include="Images\icoTileHandleWithCare00.png" />
+    <Content Include="Images\icoTileKnowledgeSkillsAbili.png" />
+    <Content Include="Images\icoTileLibraryBooks.png" />
+    <Content Include="Images\icoTileLibraryBooks00.png" />
+    <Content Include="Images\icoTileNews.png" />
+    <Content Include="Images\icoTileNews00.png" />
+    <Content Include="Images\icoTileResourceFolder.png" />
+    <Content Include="Images\icoTileTMS.png" />
+    <Content Include="Images\icoTileTools.png" />
+    <Content Include="Images\icoTileWebLinkGreen.png" />
+    <Content Include="Images\icoTileWebLinkPurple.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logoEDT.png" />
+    <Content Include="Images\logoEDT00.png" />
+    <Content Include="Images\minus.gif" />
+    <Content Include="Images\orubase.png" />
+    <Content Include="Images\pattern.png" />
+    <Content Include="Images\plus.gif" />
+    <Content Include="Images\samples.PNG" />
+    <Content Include="Images\SDTimes.PNG" />
+    <Content Include="Images\SearchFake.jpg" />
+    <Content Include="Images\superheroAccent.png" />
+    <Content Include="Images\support.PNG" />
+    <Content Include="Images\Tile-Cube-Molecule-100x100.png" />
+    <Content Include="Images\Tile-For-Magnetic-Tape100x100.png" />
+    <Content Include="Images\Tile-For-This-Week.png" />
+    <Content Include="Images\Tile-For-This-Week100x100.png" />
+    <Content Include="Images\Tile-For-Time-Search.png" />
+    <Content Include="Images\Tile-For-Time-Search100x100.png" />
+    <Content Include="Images\Tile-Gauge100x100.png" />
+    <Content Include="Images\Tile-Real-Time100x100.png" />
+    <Content Include="Images\Tile-Settings-01-100x100.png" />
+    <Content Include="Images\Tile_0.png" />
+    <Content Include="Images\Tile_1.png" />
+    <Content Include="Images\Tile_10.png" />
+    <Content Include="Images\Tile_11.png" />
+    <Content Include="Images\Tile_2.png" />
+    <Content Include="Images\Tile_3.png" />
+    <Content Include="Images\Tile_4.png" />
+    <Content Include="Images\Tile_5.png" />
+    <Content Include="Images\Tile_6.png" />
+    <Content Include="Images\Tile_7.png" />
+    <Content Include="Images\Tile_8.png" />
+    <Content Include="Images\Tile_9.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\UnderConstruction.gif" />
+    <Content Include="Images\UnderConstruction.png" />
+    <Content Include="Images\upErrow.gif" />
+    <Content Include="Images\US_flag00.png" />
+    <Content Include="Images\vp.PNG" />
+    <Content Include="Js\accordion.js" />
+    <Content Include="Js\acord_init.js" />
+    <Content Include="Js\calload.js" />
+    <Content Include="Js\fullcalendar.js" />
+    <Content Include="Js\fullcalendar.min.js" />
+    <Content Include="Js\gcal.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\boxsizing.htc" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="Assets\Documents\Events of Instruction Mindmap.pdf" />
+    <Content Include="Assets\Documents\4.2.a Join a Lync Meeting via Web or Lync Attendee.pptx" />
+    <Content Include="Assets\Documents\4.2.b Local Administration Documentation for Lync.pptx" />
+    <Content Include="Assets\Documents\4.2.c Lync 2010 Attendant Quick Reference.doc" />
+    <Content Include="Assets\Documents\4.2.d Lync 2010 Attendee Quick Reference.doc" />
+    <Content Include="Assets\Documents\4.2.e Lync 2010 Conferencing Quick Reference.doc" />
+    <Content Include="Assets\Documents\4.2.f Lync 2010 Instant Messaging and Presence Quick Reference.doc" />
+    <Content Include="Assets\Documents\4.2.g Lync 2010 Sharing and Collaboration Quick Reference.doc" />
+    <Content Include="Assets\Documents\4.3.3.a Link to VA Acronyms Website.docx" />
+    <Content Include="Assets\Documents\4.4.1 FL 12-19 Skill Certification.doc" />
+    <Content Include="Assets\Documents\4.4.2 FL 12-19 Skill Certification Enclosure.doc" />
+    <Content Include="Assets\Documents\4.4.3 OFO E-mail with Instructions.docx" />
+    <Content Include="Assets\Documents\4.4.4 Public Law 110.doc" />
+    <Content Include="Assets\Documents\4.4.5 Article 67 Skill Certification.docx" />
+    <Content Include="Assets\Documents\4.6.1.a.a 5 Ways to Be a Motivating Leader.docx" />
+    <Content Include="Assets\Documents\4.6.1.b.a Competency-Based Training Article.doc" />
+    <Content Include="Assets\Documents\4.6.1.b.b Learning Is the Master Skill.docx" />
+    <Content Include="Assets\Documents\4.6.1.b.c The Learning and Performance Link.docx" />
+    <Content Include="Assets\Documents\4.6.1.b.d Reference Guide for Instructors and Facilitators.docx" />
+    <Content Include="Assets\Documents\4.6.1.b.e Training vs Learning.docx" />
+    <Content Include="Assets\Documents\Action and Verbs Quick List.pdf" />
+    <Content Include="Assets\Documents\Best Practices “Do Not” Job Aid.pdf" />
+    <Content Include="Assets\Documents\Best Practices “Do” Job Aid.pdf" />
+    <Content Include="Assets\Documents\Case Study - Students Don’t Know Anything.pdf" />
+    <Content Include="Assets\Documents\Classroom Instructor Evaluation.pdf" />
+    <Content Include="Assets\Documents\Disruptive Behaviors Resources.pdf" />
+    <Content Include="Assets\Documents\Distance Learning Instructor Evaluation.pdf" />
+    <Content Include="Assets\Documents\Example of Classroom Training Media.pdf" />
+    <Content Include="Assets\Documents\Example of Disruptive Behaviors.pdf" />
+    <Content Include="Assets\Documents\Example of Disruptive Personalities in DL.pdf" />
+    <Content Include="Assets\Documents\Example of Disruptive Personalities.pdf" />
+    <Content Include="Assets\Documents\Example of Implementing Training Methods.pdf" />
+    <Content Include="Assets\Documents\Example of Incorporating Adult Learning Principles in DL.pdf" />
+    <Content Include="Assets\Documents\Example of Incorporating Adult Learning Principles.pdf" />
+    <Content Include="Assets\Documents\Example of Instructor Introduction.pdf" />
+    <Content Include="Assets\Documents\Example of Media Mindmap.pdf" />
+    <Content Include="Assets\Documents\Example of Placeholder PowerPoint Slides.pdf" />
+    <Content Include="Assets\Documents\Example of Strengths and Weaknesses.pdf" />
+    <Content Include="Assets\Documents\Exercise - Incorporating Adult Learning Principles.pdf" />
+    <Content Include="Assets\Documents\Fundamentals of Training Resources.pdf" />
+    <Content Include="Assets\Documents\Mindmap Job Aid.pdf" />
+    <Content Include="Assets\Documents\Power 1-2-3 Pacing Tool.pdf" />
+    <Content Include="Assets\Documents\References.pdf" />
+    <Content Include="Assets\Documents\Responding with Rapport in DL.pdf" />
+    <Content Include="Assets\Documents\Responding with Rapport.pdf" />
+    <Content Include="Assets\Documents\Sample Instructor Lesson Plan.pdf" />
+    <Content Include="Assets\Documents\Sample of Instructor Lesson Plan.pdf" />
+    <Content Include="Assets\Documents\Technical Challenges.pdf" />
+    <Content Include="Assets\Documents\Technological Challenges.pdf" />
+    <Content Include="Assets\Documents\The Art of Asking Questions in DL.pdf" />
+    <Content Include="Assets\Documents\The Art of Asking Questions.pdf" />
+    <Content Include="Assets\Documents\Training Activities - Classroom Activity Break.pdf" />
+    <Content Include="Assets\Documents\Training Activities - Classroom Energizers.pdf" />
+    <Content Include="Assets\Documents\Training Approaches Resources.pdf" />
+    <Content Include="Assets\Documents\Training Methods Resources.pdf" />
+    <Content Include="Assets\Documents\Training Preparation Mindmap.pdf" />
+    <Content Include="Assets\Documents\Types of Questions Resource.pdf" />
+    <Content Include="Assets\Documents\When to Ask Questions Resource.pdf" />
+    <Content Include="Assets\Documents\Y-Chart for Giving Feedback.pdf" />
+    <Content Include="Assets\Documents\5 Ways to Be a Motivating Leader.docx" />
+    <Content Include="Assets\Documents\5_30_14.docx" />
+    <Content Include="Assets\Documents\The-Learning-and-Performance-Link-Toolkits.pdf" />
+    <Content Include="Assets\Documents\4.2.c Lync 2010 Attendant Quick Reference.pdf" />
+    <Content Include="Assets\Documents\4.2.d Lync 2010 Attendee Quick Reference.pdf" />
+    <Content Include="Assets\Documents\4.2.e Lync 2010 Conferencing Quick Reference.pdf" />
+    <Content Include="Assets\Documents\4.2.f Lync 2010 Instant Messaging and Presence Quick Reference.pdf" />
+    <Content Include="Assets\Documents\4.2.g Lync 2010 Sharing and Collaboration Quick Reference.pdf" />
+    <Content Include="Assets\Documents\4.4.1 FL 12-19 Skill Certification.pdf" />
+    <Content Include="Assets\Documents\4.4.2 FL 12-19 Skill Certification Enclosure.pdf" />
+    <Content Include="Assets\Documents\4.4.3 OFO E-mail with Instructions.pdf" />
+    <Content Include="Assets\Documents\4.4.4 Public Law 110.pdf" />
+    <Content Include="Assets\Documents\4.4.5-Article67-Skill-Cert.pdf" />
+    <Content Include="Assets\Documents\5 Ways to Be a Motivating Leader.pdf" />
+    <Content Include="Assets\Documents\Competency-based-training-article.pdf" />
+    <Content Include="Assets\Documents\Learning-Is-the-Master-Skill.pdf" />
+    <Content Include="Assets\Documents\Tips to Avoid Death by PowerPoint.pdf" />
+    <Content Include="Assets\Documents\TrainerRefGuide.pdf" />
+    <Content Include="Assets\Documents\Training-vs-Learning.pdf" />
+    <Content Include="Assets\Documents\The Art of Asking Questions in DL1.pdf" />
+    <Content Include="Assets\Documents\Tips to Avoid “Death by PowerPoint”.pdf" />
+    <Content Include="Assets\Documents\2.1 Program Specialist Training Manage_GS12-FY08.pdf" />
+    <Content Include="Assets\Documents\2.2 TM Standard Operating Procedures.pdf" />
+    <Content Include="Assets\Documents\October_TMConference_Call.doc" />
+    <Content Include="Assets\Documents\TM NPS Draft 20150402.pdf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Assets\Documents\2015_TM_SYMPOSIUM_AGENDA.pdf" />
+    <Content Include="Assets\Documents\Standardized_Training_Summary_Report_121814.pdf" />
+    <Content Include="Assets\Documents\Training GUI_Standardized_Specifications_Document_121914.pdf" />
+    <Content Include="Assets\Documents\Training_Template_Feedback_Form.pdf" />
+    <Content Include="Assets\Documents\Standardized_VBA_Training_Development_Checklist_LongForm_050615.pdf" />
+    <Content Include="Assets\Documents\Standardized_VBA_Training_Development_Checklist_Shortform_050615.pdf" />
+    <Content Include="Assets\Documents\01_TMSymposium2015_TM_Network_Final.pdf" />
+    <Content Include="Assets\Documents\02_TMSymposium2015_Training Managers Profile_Final.pdf" />
+    <Content Include="Assets\Documents\03_TMSymposium2015_Future Vision for Training_Final.pdf" />
+    <Content Include="Assets\Documents\04_TMSymposium2015_TMSupdate_Final.pdf" />
+    <Content Include="Assets\Documents\05_TMSymposium2015_Local Leadership_Final.pdf" />
+    <Content Include="Assets\Documents\06_TMSymposium2015_Problem Solving for TMs_Final.pdf" />
+    <Content Include="Assets\Documents\07_TMSymposium2015_Diagnostic Assessments_Final.pdf" />
+    <Content Include="Assets\Documents\08_TMSymposium2015_TrainingSupportTools-JobAids_Final.pdf" />
+    <Content Include="Assets\Documents\09_TMSymposium2015_Instr_Cert_Final.pdf" />
+    <Content Include="Assets\Documents\10_TMSymposium2015_TMBestPractices_Final.pdf" />
+    <Content Include="Assets\Documents\11_USB_TrainingManagerConf.pdf" />
+    <Content Include="Assets\Documents\Standardized_Training_PowerPoint_Template_060315.pptx" />
+    <Content Include="Assets\Documents\Standardized_Training_Lesson_Plan_Sample.doc" />
+    <Content Include="Assets\Documents\Standardized_Training_Lesson_Plan_Template.doc" />
+    <Content Include="Assets\Documents\Fiduciary_Training_Updates.pdf" />
+    <Content Include="Assets\Documents\Skills_Certification_Overview.pdf" />
+    <Content Include="Assets\Documents\TM_Network_Card_Activity.pdf" />
+    <Content Include="Assets\Documents\July_2015_Call_Minutes.pdf" />
+    <Content Include="Assets\Documents\Agenda_and_Announcements.pdf" />
+    <Content Include="Assets\Documents\NWQ_Implementation_Plan.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Aug25_2015.pdf" />
+    <Content Include="Assets\Documents\FAQ_VST.pdf" />
+    <Content Include="Assets\Documents\NWQ_Slides.pdf" />
+    <Content Include="Assets\Documents\VBMS9.1_Slides.pdf" />
+    <Content Include="Assets\Documents\WARTAC_TMs_Slides.pdf" />
+    <Content Include="Assets\Documents\TMS_Class_Assignment_Job_Aid.pdf" />
+    <Content Include="Assets\Documents\FY16_PMC_NTC_Class_Assignment_Job_Aid.pdf" />
+    <Content Include="Assets\Documents\FY16_CS_NTC_Class_Assignment_Job_Aid.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Sep22_2015.pdf" />
+    <Content Include="Assets\Documents\Kristy_Townsend_MyCareer%40VA.pdf" />
+    <Content Include="Assets\Documents\Robert_Johnson_Quality_Calls.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Oct27_2015.pdf" />
+    <Content Include="Assets\Documents\Guide_to_Virtual_Classroom_Courtesies.pdf" />
+    <Content Include="Assets\Documents\November_Intro_Slides_112015.pdf" />
+    <Content Include="Assets\Documents\Training_Manager_Information.pdf" />
+    <Content Include="Assets\Documents\Virtual_Classroom_Tips_Best_Practices.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Dec18_2015.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Nov20_2015.pdf" />
+    <Content Include="Assets\Documents\Top_10_TMS_Reports.pdf" />
+    <Content Include="Assets\Documents\Lync_Attendance_Handout.pdf" />
+    <Content Include="Assets\Documents\Main_Call_Slides.pdf" />
+    <Content Include="Assets\Documents\Common_TPSS_Issues.pdf" />
+    <Content Include="Assets\Documents\TPSS_Course_Issues_Job_Aid.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Jan26_2016.pdf" />
+    <Content Include="Assets\Documents\February_Call_Welcome_PPT.pdf" />
+    <Content Include="Assets\Documents\James_Marx_RVSR_VSR_PPT.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Feb23_2016.pdf" />
+    <Content Include="Assets\Documents\March_2016_Main_Call_Slides.pdf" />
+    <Content Include="Assets\Documents\NEO_22_MAR.pdf" />
+    <Content Include="Assets\Documents\TM_Monthly_Call_Mar22_2016.pdf" />
+    <None Include="Properties\PublishProfiles\VBATMRC FROM ROBERT BRANCH.pubxml" />
+    <None Include="Properties\PublishProfiles\VBATMRC to stg.pubxml" />
+    <None Include="Properties\PublishProfiles\VBATMRC.pubxml" />
+    <None Include="Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.3.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Js\Site.js" />
+    <Content Include="Views\Events\TMCall10_27_15.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\TmTraining.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Tools\ToolsFeatures.cshtml" />
+    <Content Include="Views\Home\Faq.cshtml" />
+    <Content Include="Views\Home\Tms.cshtml" />
+    <Content Include="Views\Home\TrainingCalendar.cshtml" />
+    <Content Include="Views\Home\DutiesAndResponsibilities.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\NewsFeed.cshtml" />
+    <Content Include="Views\Home\TmJobAids.cshtml" />
+    <Content Include="Views\Home\Tools.cshtml" />
+    <Content Include="Views\Home\LearningCatalog.cshtml" />
+    <Content Include="Views\Shared\_html5shiv.cshtml" />
+    <Content Include="Views\Shared\_NonCompliant.cshtml" />
+    <Content Include="Views\Shared\_Announcements.cshtml" />
+    <Content Include="Views\Shared\_PageHeader.cshtml" />
+    <Content Include="Views\Home\Placeholder.cshtml" />
+    <Content Include="Views\Home\TestExpand.cshtml" />
+    <Content Include="Views\Home\FlyOutTest.cshtml" />
+    <Content Include="Views\Home\TrainingFundamentalsTest.cshtml" />
+    <Content Include="Views\Home\ExpandCollapseTest.cshtml" />
+    <Content Include="Views\Home\JobAidsTest.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Home\TmResources.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\TmTrainingTest.cshtml" />
+    <Content Include="Views\Home\TmCalendar_OLD.cshtml" />
+    <Content Include="Views\Calendar\TmCalendar.cshtml" />
+    <Content Include="Views\Shared\_LayoutCalendar.cshtml" />
+    <Content Include="Views\Events\TMSCall.cshtml" />
+    <Content Include="Views\Events\_ViewStart.cshtml" />
+    <Content Include="Views\Home\TmCalendar.cshtml" />
+    <Content Include="Views\Events\DRO7_8_14.cshtml" />
+    <Content Include="Views\Events\SVSR7_22_14.cshtml" />
+    <Content Include="Views\Events\TMCall6_24_14.cshtml" />
+    <Content Include="Views\Events\TMSummer6_24_14.cshtml" />
+    <Content Include="Views\Events\VSCMCall6_26_14.cshtml" />
+    <Content Include="Views\Events\TMCall8_26_14.cshtml" />
+    <Content Include="Views\Events\TMSummer8_26_14.cshtml" />
+    <Content Include="Views\Events\TMSummer8_5_14.cshtml" />
+    <Content Include="Views\Events\TMSummer9_23_14.cshtml" />
+    <Content Include="Views\Events\VSCMCall10_23_14.cshtml" />
+    <Content Include="Views\Events\VSCMCall7_24_14.cshtml" />
+    <Content Include="Views\Events\VSCMCall8_28_14.cshtml" />
+    <Content Include="Views\Events\VSCMCall9_25_14.cshtml" />
+    <Content Include="Views\Events\SVSR8_12_14.cshtml" />
+    <Content Include="Views\Events\TMCall11_25_14.cshtml" />
+    <Content Include="Views\Events\TMCall12_23_14.cshtml" />
+    <Content Include="Views\Events\TMSummer8514.cshtml" />
+    <Content Include="Views\Events\TMSummer82614.cshtml" />
+    <Content Include="Views\Events\TMSummer92314.cshtml" />
+    <Content Include="Views\Events\Chalenge3_02_15.cshtml" />
+    <Content Include="Views\Events\Chalenge3_09_15.cshtml" />
+    <Content Include="Views\Events\Chalenge5_26_15.cshtml" />
+    <Content Include="Views\Events\Chalenge6_01_15.cshtml" />
+    <Content Include="Views\Events\Chalenge7_06_15.cshtml" />
+    <Content Include="Views\Events\Chalenge7_13_15.cshtml" />
+    <Content Include="Views\Events\Chalenge9_02_14.cshtml" />
+    <Content Include="Views\Events\Chalenge9_08_14.cshtml" />
+    <Content Include="Views\Events\Chalenge9_08_15.cshtml" />
+    <Content Include="Views\Events\Chalenge9_14_15.cshtml" />
+    <Content Include="Views\Events\Chalenge11_10_14.cshtml" />
+    <Content Include="Views\Events\Chalenge11_17_14.cshtml" />
+    <Content Include="Views\Events\Chalenge1_05_15.cshtml" />
+    <Content Include="Views\Events\Chalenge1_12_15.cshtml" />
+    <Content Include="Scripts\jquery-2.1.3.min.map" />
+    <Content Include="Views\Events\TMCall.cshtml" />
+    <Content Include="Views\Events\TMCall7_28_15.cshtml" />
+    <Content Include="Views\Events\TMCall8_25_15.cshtml" />
+    <Content Include="Views\Home\TmResourcesRedirect.cshtml" />
+    <Content Include="Views\Events\TMCall9_22_15.cshtml" />
+    <Content Include="Views\Events\TMCall11_20_15.cshtml" />
+    <Content Include="Views\Events\TMCall12_18_15.cshtml" />
+    <Content Include="Views\Events\TMCall01_26_16.cshtml" />
+    <Content Include="Views\Events\TMCall02_23_16.cshtml" />
+    <Content Include="Views\Events\TMCall03_22_16.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\NewFolder1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53860</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55005/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

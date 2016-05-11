@@ -1,0 +1,61 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "TM Resources Redirect";
+}
+
+
+    
+@section styles
+{
+        <style type="text/css">
+            .answer {
+                font-family: Arial,Verdana;
+                font-size: 12px;
+            }
+
+            .question {
+                cursor: pointer;
+                font-family: 'Times New Roman';
+                font-size: 16px;
+                color: red;
+            }
+
+            #faq-ulist {
+                list-style: none;
+            }
+        </style>
+    }
+
+<div class="content-wrapper panel main-panel">
+ 
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <div class="panel-body">
+                
+                <h6 style="float: right; color: #808080;">Last Updated: 9/20/15</h6>
+
+   
+    <p>Loading... Please Wait</p>          
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = '@Url.Content("~")';
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        //baseUrl += "/Home/ReadXMLFromFile/";
+        $(document).ready(function () {
+            window.location = baseUrl + "/Home/TmResources/False";
+
+            $('#faq-list h3').next('.answer').slideToggle(0);
+
+            $('#faq-list h3').click(function () {
+
+                $(this).next('.answer').slideToggle(500);
+
+            });
+        });
+    </script>
+}

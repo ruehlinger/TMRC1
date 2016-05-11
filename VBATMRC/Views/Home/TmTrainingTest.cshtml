@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "TM Training Test";
+    string fname = "";
+}
+
+
+
+
+
+
+<link href="@Url.Content("~/content/tmrcLocal.css")" rel="stylesheet" type="text/css"  >
+
+<div class="content-wrapper panel main-panel">
+
+    @{
+        Html.RenderPartial("_PageHeader");           
+    }
+   
+
+    <div class="content-wrapper">
+        <div class="presentationPanel01 ">
+            <div class="panel-body">
+                <a name="itc-top-anchor"></a>
+                
+                <table id="tbl-index">                   
+                    <tr><th colspan="2">Index of Job Aids</th></tr>                   
+                    <tr><td><a href="#initial">Initial TM Training</a></td><td><a href="#advanced">Advanced TM Training</a></td></tr>
+                    <tr><td><a href="#optional">Optional TM Training</a></td><td></td></tr>
+                    
+                </table>
+                <br/>   
+                <a name="initial"></a>
+                 <table class="table table-hover" style="width:100%" id="tbl-itc">
+                    <tr><th style="width:30%" >Initial TM Training</th><th style="width:70%">Description</th></tr>
+                    <tr><td >TBD<br />(TBD)</td><td class="active">Initial TM training is currently under development. </td></tr>
+                    
+                    
+                    <tr id="itc-last-cell" ><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                </table>   
+                <a name="advanced"></a>
+                 <table class="table table-hover" style="width:100%" id="tbl-itc">
+                    <tr><th style="width:30%" >Advanced TM Training</th><th style="width:70%">Description</th></tr>
+                    <tr><td >TBD<br />(TBD)</td><td class="active">Advanced TM training is currently under development. </td></tr>
+                    
+                    
+                    <tr id="itc-last-cell" ><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                </table> 
+                <a name="optional"></a>      
+                <table class="table table-hover" style="width:100%" id="tbl-itc">
+                    <tr><th style="width:30%" >Optional TM Training</th><th style="width:70%">Description</th></tr>
+                    <tr><td><a href="~/Assets/Documents/4.4.4 Public Law 110.pdf" target="_blank">Public Law 110</a><br />(10/8/08)</td><td class="active">Certification and training of employees of the Veterans Benefits Administration responsible for processing claims. </td></tr>
+                    <tr><td><a href="~/Assets/Documents/4.4.5-Article67-Skill-Cert.pdf" target="_blank">Article 67 Skill Certification</a><br />(3/20/12)</td><td class="active">This document contains AFGE Article 67 (Skills Certification). It includes, but is not limited to, information on applicability, test administration, notification of test results, test environment, and test preparation and feedback. </td></tr>
+                    <tr><td><a href="~/Assets/Documents/Competency-based-training-article.pdf">Competency-Based Training article</a><br />(4/3/14)</td><td class="active">TBD</td></tr>
+                    <tr><td><a href="~/Assets/Documents/Learning-Is-the-Master-Skill.pdf">Learning Is the Master Skill</a><br />(8/2/10)</td><td class="active">TBD</td></tr>
+                    <tr><td><a href="~/Assets/Documents/4.2.a Join a Lync Meeting via Web or Lync Attendee.pptx" target="_blank">Join a Lync Meeting via Web or Lync Attendee</a><br />(3/21/13)</td><td class="active">This quick reference describes the tasks you will most commonly perform when using Microsoft® Lync™ 2010 An integrated call management application that enables you to manage many conversations at once by quickly handling and routing phone calls and instant messages. </td></tr>
+                    <tr><td><a href="~/Assets/Documents/4.2.b Local Administration Documentation for Lync.pptx" target="_blank">Local Administration Documentation for Lync</a><br/>(3/11/13)</td><td class="active">This PowerPoint presentation provides local administrator’s an overview of Microsoft® Lync™ 2010 and the process of administering system users. </td></tr>
+                    
+
+                    <tr><td >@{fname = "Events of Instruction Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(10/1/12)</td><td class="active">TBD</td></tr>
+                    
+                    <tr><td>@{fname = "Training Approaches Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/20/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "References";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(8/29/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Fundamentals of Training Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(8/9/12)</td><td class="active">TBD</td></tr>
+
+                    <tr><td>@{fname = "Mindmap Job Aid";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/4/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Example of Incorporating Adult Learning Principles";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/19/12)</td><td class="active">TBD</td></tr>
+                    
+                    <tr><td>@{fname = "Example of Instructor Introduction";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/24/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Example of Disruptive Personalities";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/25/12)</td><td class="active">TBD</td></tr>
+
+
+                    
+                    <tr><td>@{fname = "Types of Questions Resource";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(8/29/12)</td><td class="active">TBD</td></tr>
+
+                    <tr><td>@{fname = "Training Preparation Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/12/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Y-Chart for Giving Feedback";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/12/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Disruptive Behaviors Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(8/27/12)</td><td class="active">TBD</td></tr>
+
+                   
+                    <tr><td>@{fname = "Training Activities - Classroom Energizers";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(7/27/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Training Activities - Classroom Activity Break";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(7/27/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Technological Challenges";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/24/12)</td><td class="active">TBD</td></tr>
+
+                    <tr><td>@{fname = "Sample Instructor Lesson Plan";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(June 2012)</td><td class="active">TBD</td></tr>
+                   
+                    <tr><td>@{fname = "Power 1-2-3 Pacing Tool";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br/>(8/27/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Best Practices “Do” Job Aid";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/12/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Best Practices “Do Not” Job Aid";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/7/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Exercise - Incorporating Adult Learning Principles";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/19/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Case Study - Students Don’t Know Anything";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(9/24/12)</td><td class="active">TBD</td></tr>
+                    
+                    <tr><td>@{fname = "Sample of Instructor Lesson Plan";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(February 2012)</td><td class="active">TBD</td></tr>
+                    
+                    <tr><td>@{fname = "Example of Media Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })<br />(8/8/12)</td><td class="active">TBD</td></tr>
+                    
+                    <tr><td>@{fname = "Example of Disruptive Personalities";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + " in DL.pdf" }, new { title = fname })<br />(9/25/12)</td><td class="active">TBD</td></tr>
+                    <tr><td>@{fname = "Example of Incorporating Adult Learning Principles";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + " in DL.pdf" }, new { title = fname })<br />(9/19/12)</td><td class="active">TBD</td></tr>
+                    
+                    <tr id="itc-last-cell" ><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                </table>
+                
+                <!--<table class="table table-hover" style="width:100%" id="tbl-lync">
+                    <tr><th style="width:30%"  >Lync 2010 Job Aids</th><th style="width:70%" >Description</th></tr>
+                    <tr><td>@{fname = "Join a Lync Meeting via Web or Lync Attendee";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.a " + fname + ".pptx" }, new { title = fname })<br />(3/21/13)</td><td class="active">TBD </td></tr>
+                    <tr><td>@{fname = "Local Administration Documentation for Lync";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.2.b " + fname + ".pptx" }, new { title = fname })<br/>(3/11/13)</td><td class="active">TBD</td></tr>
+                    
+                  
+                    <tr id="lync-last-cell" ><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>                   
+                </table>
+               
+                <table class="table table-hover" style="width:100%" id="tbl-skills">
+                    <tr><th style="width:30%">Skills Certification Job Aids</th><th style="width:70%">Description</th></tr>
+                    
+                    <tr><td>@{fname = "OFO E-mail with Instructions";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.3 " + fname + ".docx" }, new { title = fname })<br />(1/15/13)</td><td class="active"></td></tr>
+                    <tr><td>@{fname = "Public Law 110";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = "4.4.4 " + fname + ".doc" }, new { title = fname })<br />(10/8/08)</td><td class="active">Certification and training of employees of the Veterans Benefits Administration responsible for processing claims. </td></tr>
+                    
+                    <tr id="skills-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                </table>
+                <table class="table table-hover" style="width:100%" id="tbl-links">
+                    <tr><th style="width:30%">Useful Links<a name="links"></a></th><th style="width:70%">Description</th></tr>
+                    
+                    
+                    <tr id="links-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                </table>-->
+
+            </div>
+        </div>
+    </div>
+ </div>

@@ -1,0 +1,3 @@
+    
+The announcement balloon appears every time users visit the home page.  The megaphone icon (above right) opens and closes the balloon.
+New Announcement Feature! 

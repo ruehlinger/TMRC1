@@ -1,0 +1,200 @@
+﻿@using System.Web.Hosting
+@using VBATMRC.Models
+@{
+    ViewBag.Title = "VBA TMRC";
+    var tilestyle= "";
+    ViewBag.dev = false;
+    //var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+
+}
+<div class="content-wrapper panel main-panel">
+    <div class="bkgrImage">
+        <!-- ANNOUNCEMENTS BALOON HERE -->
+        @{
+            //if (ViewBag.Dev)
+            //{
+            //}
+            Html.RenderPartial("_Announcements", new Announcement());
+        }
+        <div class="content-wrapper">
+            <div class="presentationPanel01 ">
+                <div class="panel-body">
+                    @*<div style="margin-left: -8px; color: rgb(41, 44, 111); font-size: 1em;">Resources</div>*@
+                    <div class="row tilesRow">
+                        @* //////////////////////////////////////////////// *@
+                        <div class="col-md-12 col-sm-12 col-xs-8 tilesRow" style="margin-left: 100px;">
+                          <!--  <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+             <div class="center-block class_box_shadow tile-base">
+                 <a href="~/Home/TmTraining/@ViewBag.Dev.ToString()"
+                    data-toggle="tooltip" target="_self"
+                    title="Training Manager Training" class="thumbnail tile-ancor-transparent">
+                     <div class="gradientDarkBlue45 tile-base">
+                         <img src="~/Images/icoTileWebLinkGreen.png"
+                              style="width: inherit;"
+                              alt="Training Manager Training" />
+                     </div>
+                     <div class="carousel-caption tileCaption">
+                         TM Training
+                     </div>
+                 </a>
+             </div>
+         </div>-->
+                            <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                <div class="center-block class_box_shadow tile-base">
+                                    @{
+                                        //Alex Fisher logic changed and commented for demo
+                                        //var tmsLink = ViewBag.Dev ? Url.Action("Tms", "Home") + "/" + ViewBag.Dev : "https://www.tms.va.gov";
+                                        var tmsLink = ViewBag.Dev ? "https://www.tms.va.gov" : Url.Action("Tms", "Home") + "/" + ViewBag.Dev;
+                                    }
+                                    @*<a href="~/Home/Tms"*@
+                                    <a href="@tmsLink"
+                                       data-toggle="tooltip" target="_self"
+                                       title="Talent Management System"
+                                       class="thumbnail tile-ancor-transparent">
+                                        <div class="gradientLightPurple45 tile-base">
+                                            <img src="~/Images/icoTileTMS.png"
+                                                 style="width: inherit;"
+                                                 alt="Talent Management System" />
+                                        </div>
+                                        <div class="carousel-caption tileCaption">
+                                            Talent Management System
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                <div class="center-block class_box_shadow tile-base">
+                                    <a href="~/Home/TmResources/@ViewBag.Dev.ToString()"
+                                       data-toggle="tooltip" target="_self"
+                                       title="Training Manager Resources"
+                                       class="thumbnail tile-ancor-transparent">
+                                        <div class="gradientLightBlue45 tile-base">
+                                            <img src="~/Images/icoTileTools.png"
+                                                 style="width: inherit;"
+                                                 alt="TM Resources" />
+                                        </div>
+                                        <div class="carousel-caption tileCaption">
+                                            TM Resources
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                <div class="center-block class_box_shadow tile-base">
+                                    <div class="center-block class_box_shadow tile-base">
+                                        @{
+                                            var lcLink = ViewBag.Dev ? Url.Action("LearningCatalog", "Home") + "/" + ViewBag.Dev.ToString() : "https://vba-tpi.vbatraining.org/lc/";
+                                        }
+                                        @*<a href="~/Home/LearningCatalog"*@
+                                        <a href=@lcLink
+                                           data-toggle="tooltip" target="_blank"
+                                           title="VBA Learning Catalog" class="thumbnail tile-ancor-transparent">
+                                            <div class="gradientLightPurple45 tile-base">
+                                                <img src="~/Images/icoTileLibraryBooks.png"
+                                                     style="width: inherit;"
+                                                     alt="VBA Learning Catalog" />
+                                            </div>
+                                            <div class="carousel-caption tileCaption">
+                                                VBA Learning Catalog
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            @* //////////////////////////////////////////////// *@
+                        </div>
+                        <div class="row  tilesRow">
+                            @* //////////////////////////////////////////////// *@
+                            <div class="col-md-12 col-sm-12 col-xs-8 tilesRow" style="margin-left: 100px;">
+                                <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                    <div class="center-block class_box_shadow tile-base">
+                                        <a href="~/Home/DutiesAndResponsibilities/@ViewBag.Dev.ToString()"
+                                           data-toggle="tooltip" target="_self"
+                                           title="Training Manager Duties &amp; Responsibilities" class="thumbnail tile-ancor-transparent">
+                                            <div class="gradientLightPurple45 tile-base">
+                                                <img src="~/Images/icoTileHandleWithCare.png"
+                                                     style="width: inherit;"
+                                                     alt="Duties & Responsibilities" />
+                                            </div>
+                                            <div class="carousel-caption tileCaption">
+                                                TM Duties & Responsibilities
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                    <div class="center-block class_box_shadow tile-base">
+                                        <a href="~/Home/TmCalendar/@ViewBag.Dev.ToString()"
+                                           data-toggle="tooltip" target="_self"
+                                           title="Training Manager Calendar"
+                                           class="thumbnail tile-ancor-transparent">
+                                            <div class="gradientLightBlue45 tile-base">
+                                                <img src="~/Images/icoTileCaledar.png"
+                                                     style="width: inherit;"
+                                                     alt="Training Calendar" />
+                                            </div>
+                                            <div class="carousel-caption tileCaption">
+                                                TM Calendar
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                    <div class="center-block class_box_shadow tile-base">
+                                        <a href="~/Home/NewsFeed/@ViewBag.Dev.ToString()"
+                                           data-toggle="tooltip" target="_self"
+                                           title="What's New" class="thumbnail tile-ancor-transparent">
+                                            <div class="gradientLightPurple45 tile-base">
+                                                <img src="~/Images/icoTileNews.png"
+                                                     style="width: inherit;"
+                                                     alt="News" />
+                                            </div>
+                                            <div class="carousel-caption tileCaption">
+                                                What's New
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-3 col-xs-4 tiles">
+                                    <!--<div class="center-block class_box_shadow tile-base">
+                <a href="~/Home/Faq/@ViewBag.Dev.ToString()"
+                   data-toggle="tooltip" target="_self"
+                   title="Frequently Asked Questions"
+                   class="thumbnail tile-ancor-transparent ">
+                    <div class="gradientDarkBlue45 tile-base">
+                        <img src="~/Images/icoTileFAQ.png"
+                             style="width: inherit;"
+                             alt="Frequently Asked Questions" />
+                    </div>
+                    <div class="carousel-caption tileCaption">
+                        FAQs
+                    </div>
+                </a>
+            </div>-->
+                                </div>
+                            </div>
+                            @* //////////////////////////////////////////////// *@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+    </script>
+}

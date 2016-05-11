@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "TrainingFundamentalsTest";
+}
+
+<h2>TrainingFundamentalsTest</h2>
+<div class="content-wrapper panel main-panel">
+
+    @{
+
+        Html.RenderPartial("_PageHeader");
+        string fname;
+    }
+
+    <style>
+       
+       
+        ul {
+
+            list-style:none;
+        }
+        #elements {
+            position: absolute;
+        }
+        #descriptions {
+            position:relative;
+            margin-left:200px;
+            float:left;
+            
+        }
+
+    </style>
+
+
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <div class="panel-body">
+              <div id="displayLvl3">
+                    <ul id="elements">
+                        <li>@{fname = "Events of Instruction Mindmap";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })</li>
+                        <li>@{fname = "Action and Verbs Quick List";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })</li>
+                        <li>@{fname = "Training Methods Resources";}@Html.ActionLink(fname, "DownloadFile", new { dev = ViewBag.Dev, filename = fname + ".pdf" }, new { title = fname })</li>
+                        
+                    </ul>
+                    <ul id="descriptions">
+                        <li>Description of Events of Instruction Mindmap</li>
+                        <li>Description of Action and Verbs Quick List</li>
+                        <li>Description  of Training Methods Resources </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,1429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>Z:\VBATMRC</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/New Announcement Feature.txt">
+      <publishTime>11/19/2015 09:45:14</publishTime>
+    </File>
+    <File Include="App_Data/Symposium.txt">
+      <publishTime>04/15/2015 15:09:49</publishTime>
+    </File>
+    <File Include="App_Data/TM Summer Learning.txt">
+      <publishTime>11/19/2015 09:45:14</publishTime>
+    </File>
+    <File Include="App_Data/TM.txt">
+      <publishTime>04/15/2015 15:09:49</publishTime>
+    </File>
+    <File Include="App_Data/Welcome.txt">
+      <publishTime>11/19/2015 09:45:14</publishTime>
+    </File>
+    <File Include="App_Data/xmlFile.xml">
+      <publishTime>03/29/2016 14:48:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/01_TMSymposium2015_TM_Network_Final.pdf">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/02_TMSymposium2015_Training Managers Profile_Final.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/03_TMSymposium2015_Future Vision for Training_Final.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/04_TMSymposium2015_TMSupdate_Final.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/05_TMSymposium2015_Local Leadership_Final.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/06_TMSymposium2015_Problem Solving for TMs_Final.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/07_TMSymposium2015_Diagnostic Assessments_Final.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/08_TMSymposium2015_TrainingSupportTools-JobAids_Final.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/09_TMSymposium2015_Instr_Cert_Final.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/10_TMSymposium2015_TMBestPractices_Final.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/11_USB_TrainingManagerConf.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/2.1 Program Specialist Training Manage_GS12-FY08.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/2.2 TM Standard Operating Procedures.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/2015_TM_SYMPOSIUM_AGENDA.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.a Join a Lync Meeting via Web or Lync Attendee.pptx">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.b Local Administration Documentation for Lync.pptx">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.c Lync 2010 Attendant Quick Reference.doc">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.c Lync 2010 Attendant Quick Reference.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.d Lync 2010 Attendee Quick Reference.doc">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.d Lync 2010 Attendee Quick Reference.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.e Lync 2010 Conferencing Quick Reference.doc">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.e Lync 2010 Conferencing Quick Reference.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.f Lync 2010 Instant Messaging and Presence Quick Reference.doc">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.f Lync 2010 Instant Messaging and Presence Quick Reference.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.g Lync 2010 Sharing and Collaboration Quick Reference.doc">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.2.g Lync 2010 Sharing and Collaboration Quick Reference.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.3.3.a Link to VA Acronyms Website.docx">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.1 FL 12-19 Skill Certification.doc">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.1 FL 12-19 Skill Certification.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.2 FL 12-19 Skill Certification Enclosure.doc">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.2 FL 12-19 Skill Certification Enclosure.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.3 OFO E-mail with Instructions.docx">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.3 OFO E-mail with Instructions.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.4 Public Law 110.doc">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.4 Public Law 110.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.5 Article 67 Skill Certification.docx">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.4.5-Article67-Skill-Cert.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.6.1.a.a 5 Ways to Be a Motivating Leader.docx">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.6.1.b.a Competency-Based Training Article.doc">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.6.1.b.b Learning Is the Master Skill.docx">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.6.1.b.c The Learning and Performance Link.docx">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.6.1.b.d Reference Guide for Instructors and Facilitators.docx">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/4.6.1.b.e Training vs Learning.docx">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/5 Ways to Be a Motivating Leader.docx">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/5 Ways to Be a Motivating Leader.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/5_30_14.docx">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Action and Verbs Quick List.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Agenda_and_Announcements.pdf">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/Best Practices “Do Not” Job Aid.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Best Practices “Do” Job Aid.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Case Study - Students Don’t Know Anything.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Classroom Instructor Evaluation.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Common_TPSS_Issues.pdf">
+      <publishTime>01/28/2016 11:24:28</publishTime>
+    </File>
+    <File Include="Assets/Documents/Competency-based-training-article.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Disruptive Behaviors Resources.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Distance Learning Instructor Evaluation.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Events of Instruction Mindmap.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Classroom Training Media.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Disruptive Behaviors.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Disruptive Personalities in DL.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Disruptive Personalities.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Implementing Training Methods.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Incorporating Adult Learning Principles in DL.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Incorporating Adult Learning Principles.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Instructor Introduction.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Media Mindmap.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Placeholder PowerPoint Slides.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Example of Strengths and Weaknesses.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Exercise - Incorporating Adult Learning Principles.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/FAQ_VST.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/February_Call_Welcome_PPT.pdf">
+      <publishTime>03/03/2016 14:16:14</publishTime>
+    </File>
+    <File Include="Assets/Documents/Fiduciary_Training_Updates.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Fundamentals of Training Resources.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/FY16_CS_NTC_Class_Assignment_Job_Aid.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/FY16_PMC_NTC_Class_Assignment_Job_Aid.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/Guide_to_Virtual_Classroom_Courtesies.pdf">
+      <publishTime>11/27/2015 11:25:36</publishTime>
+    </File>
+    <File Include="Assets/Documents/James_Marx_RVSR_VSR_PPT.pdf">
+      <publishTime>03/03/2016 14:15:53</publishTime>
+    </File>
+    <File Include="Assets/Documents/July_2015_Call_Minutes.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/Kristy_Townsend_MyCareer%40VA.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Learning-Is-the-Master-Skill.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Lync_Attendance_Handout.pdf">
+      <publishTime>01/28/2016 11:24:06</publishTime>
+    </File>
+    <File Include="Assets/Documents/Main_Call_Slides.pdf">
+      <publishTime>01/28/2016 11:24:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/March_2016_Main_Call_Slides.pdf">
+      <publishTime>03/24/2016 11:23:10</publishTime>
+    </File>
+    <File Include="Assets/Documents/Mindmap Job Aid.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/NEO_22_MAR.pdf">
+      <publishTime>03/24/2016 11:23:22</publishTime>
+    </File>
+    <File Include="Assets/Documents/November_Intro_Slides_112015.pdf">
+      <publishTime>11/27/2015 11:27:15</publishTime>
+    </File>
+    <File Include="Assets/Documents/NWQ_Implementation_Plan.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/NWQ_Slides.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/October_TMConference_Call.doc">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Power 1-2-3 Pacing Tool.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/References.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Responding with Rapport in DL.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Responding with Rapport.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Robert_Johnson_Quality_Calls.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Sample Instructor Lesson Plan.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Sample of Instructor Lesson Plan.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Skills_Certification_Overview.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_Lesson Plan_Sample_121914.pdf">
+      <publishTime>04/08/2015 10:18:21</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_Lesson Plan_Template_121914.pdf">
+      <publishTime>04/08/2015 10:18:21</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_Lesson_Plan_Sample.doc">
+      <publishTime>11/19/2015 13:22:56</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_Lesson_Plan_Template.doc">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_PowerPoint_Template_051915.pptx">
+      <publishTime>05/19/2015 14:21:32</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_PowerPoint_Template_060315.pptx">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_PowerPoint_Template_121914.pptx">
+      <publishTime>04/20/2015 08:45:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_Summary_Report_121814.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_Training_Template_121914.pptx">
+      <publishTime>04/20/2015 08:45:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_VBA_Training_Development_Checklist_LongForm_050615.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_VBA_Training_Development_Checklist_LongForm_121914.pdf">
+      <publishTime>04/08/2015 10:18:21</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_VBA_Training_Development_Checklist_Shortform_050615.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_VBA_Training_Development_Checklist_ShortForm_121914.pdf">
+      <publishTime>04/08/2015 10:18:21</publishTime>
+    </File>
+    <File Include="Assets/Documents/Standardized_WBT_TemplateOct2014.jpg">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/Technical Challenges.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/Technological Challenges.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/The Art of Asking Questions in DL.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/The Art of Asking Questions in DL1.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/The Art of Asking Questions.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/The-Learning-and-Performance-Link-Toolkits.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/Tips to Avoid Death by PowerPoint.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Tips to Avoid “Death by PowerPoint”.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM NPS Draft 20150402.pdf">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/TMS_Class_Assignment_Job_Aid.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Aug25_2015.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Dec18_2015.pdf">
+      <publishTime>01/22/2016 09:08:27</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Feb23_2016.pdf">
+      <publishTime>03/03/2016 14:15:28</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Jan26_2016.pdf">
+      <publishTime>02/17/2016 14:25:07</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Mar22_2016.pdf">
+      <publishTime>03/29/2016 14:47:59</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Nov20_2015.pdf">
+      <publishTime>12/10/2015 10:53:30</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Oct27_2015.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Monthly_Call_Sep22_2015.pdf">
+      <publishTime>11/19/2015 09:46:47</publishTime>
+    </File>
+    <File Include="Assets/Documents/TM_Network_Card_Activity.pdf">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/Top_10_TMS_Reports.pdf">
+      <publishTime>01/22/2016 09:07:38</publishTime>
+    </File>
+    <File Include="Assets/Documents/TPSS_Course_Issues_Job_Aid.pdf">
+      <publishTime>01/28/2016 11:23:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/TrainerRefGuide.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training Activities - Classroom Activity Break.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training Activities - Classroom Energizers.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training Approaches Resources.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training GUI_Standardized_Specifications_Document_121914.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training Methods Resources.pdf">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training Preparation Mindmap.pdf">
+      <publishTime>11/19/2015 09:46:46</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training-vs-Learning.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training_Manager_Information.pdf">
+      <publishTime>11/27/2015 11:26:56</publishTime>
+    </File>
+    <File Include="Assets/Documents/Training_Template_Feedback_Form.pdf">
+      <publishTime>11/19/2015 09:46:48</publishTime>
+    </File>
+    <File Include="Assets/Documents/Types of Questions Resource.pdf">
+      <publishTime>11/19/2015 09:46:42</publishTime>
+    </File>
+    <File Include="Assets/Documents/VBMS9.1_Slides.pdf">
+      <publishTime>11/19/2015 09:46:43</publishTime>
+    </File>
+    <File Include="Assets/Documents/Virtual_Classroom_Tips_Best_Practices.pdf">
+      <publishTime>11/27/2015 11:26:33</publishTime>
+    </File>
+    <File Include="Assets/Documents/WARTAC_TMs_Slides.pdf">
+      <publishTime>11/19/2015 09:46:45</publishTime>
+    </File>
+    <File Include="Assets/Documents/When to Ask Questions Resource.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="Assets/Documents/Y-Chart for Giving Feedback.pdf">
+      <publishTime>11/19/2015 09:46:44</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/19/2015 09:44:52</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>11/19/2015 09:44:53</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>11/19/2015 09:44:58</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>11/19/2015 09:45:04</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>11/19/2015 09:45:03</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>11/19/2015 09:45:01</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>11/19/2015 09:44:56</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/19/2015 09:44:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/19/2015 09:44:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.WebPages.OAuth.dll">
+      <publishTime>11/19/2015 09:45:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/19/2015 09:44:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/19/2015 09:45:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/19/2015 09:44:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/19/2015 09:45:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/19/2015 09:45:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/19/2015 09:44:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/19/2015 09:44:57</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/19/2015 09:44:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/19/2015 09:44:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/19/2015 09:44:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/19/2015 09:44:50</publishTime>
+    </File>
+    <File Include="bin/VBATMRC.dll">
+      <publishTime>03/29/2016 14:48:36</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/19/2015 09:44:52</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.dll">
+      <publishTime>11/19/2015 09:44:59</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.dll">
+      <publishTime>11/19/2015 09:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-ie7.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/Colors.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/fullcalendar.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/fullcalendar.print.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/SiteIE7.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/SiteLocal.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/SiteLocalIE8.css">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui1.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui10.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui11.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui12.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui13.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui2.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui3.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui4.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui5.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui6.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui7.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui8.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui9.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui1.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui10.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui11.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui12.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui13.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui2.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui3.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui4.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui5.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui6.png">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui7.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui8.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui9.png">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>11/19/2015 09:46:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>11/19/2015 09:46:24</publishTime>
+    </File>
+    <File Include="Content/tmrcLocal.css">
+      <publishTime>12/08/2015 16:10:03</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/19/2015 09:46:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Icon.png">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Images/accent.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/bg-explore-form.jpg">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/bg-header.jpg">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/bg-middle-effect.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/BG.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/bullet.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/calendar-google.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/CompMode.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/CompTools.jpg">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/CompTools.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/disabled.jpg">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/document.PNG">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/enabled.jpg">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/Estudio.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/facebook.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/heroAccent.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/icoLP00.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/IcoSearch.jpg">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileAnnouncement.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileAnnouncement00.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileAnnouncement01.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileCaledar.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileCluster.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileFAQ.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileFolderResource00.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileGroupCluster.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/icoTileHandleWithCare.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileHandleWithCare00.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileKnowledgeSkillsAbili.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileLibraryBooks.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileLibraryBooks00.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileNews.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/icoTileNews00.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileResourceFolder.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileTMS.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/icoTileTools.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/icoTileWebLinkGreen.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/icoTileWebLinkPurple.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/logoEDT.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/logoEDT00.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/minus.gif">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList0.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList1.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList2.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList3.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList4.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList5.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList6.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList7.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList8.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orderedList9.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/orubase.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/pattern.png">
+      <publishTime>12/08/2015 15:48:51</publishTime>
+    </File>
+    <File Include="Images/plus.gif">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/samples.PNG">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/SDTimes.PNG">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/SearchFake.jpg">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/superheroAccent.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/support.PNG">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile-Cube-Molecule-100x100.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/Tile-For-Magnetic-Tape100x100.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/Tile-For-This-Week.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/Tile-For-This-Week100x100.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/Tile-For-Time-Search.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/Tile-For-Time-Search100x100.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/Tile-Gauge100x100.png">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/Tile-Real-Time100x100.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/Tile-Settings-01-100x100.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/Tile_0.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_1.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_10.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/Tile_11.png">
+      <publishTime>11/19/2015 09:45:09</publishTime>
+    </File>
+    <File Include="Images/Tile_2.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_3.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_4.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_5.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_6.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_7.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_8.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/Tile_9.png">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Images/twitter.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/UnderConstruction.gif">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/UnderConstruction.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/upErrow.gif">
+      <publishTime>11/19/2015 09:45:10</publishTime>
+    </File>
+    <File Include="Images/US_flag00.png">
+      <publishTime>11/19/2015 09:45:05</publishTime>
+    </File>
+    <File Include="Images/vp.PNG">
+      <publishTime>11/19/2015 09:45:08</publishTime>
+    </File>
+    <File Include="Js/accordion.js">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Js/acord_init.js">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Js/calload.js">
+      <publishTime>03/29/2016 14:46:34</publishTime>
+    </File>
+    <File Include="Js/fullcalendar.js">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Js/fullcalendar.min.js">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Js/gcal.js">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="Js/Site.js">
+      <publishTime>11/19/2015 09:46:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/19/2015 09:46:26</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/boxsizing.htc">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/html5shiv.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1-vsdoc.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.min.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.min.map">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-migrate-1.2.1.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.min.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate-vsdoc.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.1.0.debug.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.1.0.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.5.3.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Scripts/respond.matchmedia.addListener.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/respond.matchmedia.addListener.min.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/19/2015 09:46:28</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/19/2015 09:46:27</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveExternalLoginsPartial.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Calendar/TmCalendar.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge11_10_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge11_17_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge1_05_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge1_12_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge3_02_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge3_09_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge5_26_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge6_01_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge7_06_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge7_13_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge9_02_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge9_08_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge9_08_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/Chalenge9_14_15.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/DRO7_8_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/SVSR7_22_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/SVSR8_12_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall01_26_16.cshtml">
+      <publishTime>03/24/2016 11:34:52</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall02_23_16.cshtml">
+      <publishTime>03/24/2016 11:34:57</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall03_22_16.cshtml">
+      <publishTime>03/29/2016 14:46:55</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall10_27_15.cshtml">
+      <publishTime>01/28/2016 12:01:33</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall10_28_14.cshtml">
+      <publishTime>10/06/2014 11:35:50</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall11_20_15.cshtml">
+      <publishTime>01/28/2016 12:01:33</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall11_25_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall12_18_15.cshtml">
+      <publishTime>01/28/2016 12:01:33</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall12_23_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall6_24_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall7_28_15.cshtml">
+      <publishTime>01/28/2016 12:01:33</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall8_25_15.cshtml">
+      <publishTime>01/28/2016 12:01:33</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall8_26_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMCall9_22_15.cshtml">
+      <publishTime>01/28/2016 12:01:33</publishTime>
+    </File>
+    <File Include="Views/Events/TMSCall.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer6_24_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer82614.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer8514.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer8_26_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer8_5_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer92314.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/TMSummer9_23_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/VSCMCall10_23_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/VSCMCall6_26_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/VSCMCall7_24_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/VSCMCall8_28_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/VSCMCall9_25_14.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Events/_ViewStart.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/DutiesAndResponsibilities.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Home/ExpandCollapseTest.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/Faq.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/FlyOutTest.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/21/2016 13:58:42</publishTime>
+    </File>
+    <File Include="Views/Home/JobAidsTest.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/LearningCatalog.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Home/NewsFeed.cshtml">
+      <publishTime>03/21/2016 16:11:37</publishTime>
+    </File>
+    <File Include="Views/Home/Placeholder.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Home/Test.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TestExpand.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Home/TmCalendar.cshtml">
+      <publishTime>03/29/2016 14:43:01</publishTime>
+    </File>
+    <File Include="Views/Home/TmCalendar_OLD.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TmJobAids.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TmResources.cshtml">
+      <publishTime>01/29/2016 14:32:52</publishTime>
+    </File>
+    <File Include="Views/Home/TmResourcesRedirect.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/Tms.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TmTraining.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TmTrainingTest.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/Tools.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TrainingCalendar.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Home/TrainingFundamentalsTest.cshtml">
+      <publishTime>11/19/2015 09:46:29</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_Announcements.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_html5shiv.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/29/2016 14:42:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutCalendar.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_NonCompliant.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_PageHeader.cshtml">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/Tools/ToolsFeatures.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/19/2015 09:46:31</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/19/2015 09:46:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/19/2015 13:37:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "TestExpand";
+    ViewBag.Dev = false;
+}
+
+<h2>TestExpand</h2>
+@section styles
+{
+
+}
+
+<div class="content-wrapper panel main-panel">
+    <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+        //Html.RenderPartial("_Announcements", new Announcement());
+        Html.RenderPartial("_PageHeader");
+    }
+
+    <style type="text/css">
+        .lvl1 {
+        }
+
+        .root {
+            cursor: pointer;
+        }
+    </style>
+
+    @section scripts
+    {
+        <script type="text/javascript">
+       var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+        $(document).ready(function () {
+            $(".root").next(".lvl1").slideToggle(0);
+           
+           
+
+            $(".root").click(function () {
+
+               
+
+                $(this).next(".lvl1").slideToggle(100);
+
+                // $(this).next(".lvl2").slideToggle(0);
+                //$(this).next(".lvl2").hide();
+
+            });
+        });
+
+        </script>
+    }
+
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+
+            <div class="panel-body  ">
+                <section>
+
+
+                    <ul>
+                        <li>
+                            <h3 class="root">Ford</h3>
+                          
+                                <ul class="lvl1" >
+                                    <li  ><div class="childLvl1"  >Explorer</div>
+                                    
+                                    <ul class="lvl2"  >
+
+                                        <li >White</li>
+                                        <li>Black</li>
+                                        <li>Red</li>
+                                    </ul>
+                                    
+                                    </li>
+                                    <li>Escort</li>
+                                </ul>
+                           
+                        </li>
+                        <li><h3 class="root">Jeep</h3>
+
+                        <ul class="lvl1"><li>Cherokee</li>
+                            <li>Gr Cherokee</li>
+                            
+                            
+                            </ul>
+                        
+                        </li>
+                        <li><h3 class="root">Dodge</h3></li>
+                    </ul>
+
+
+
+
+    </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+

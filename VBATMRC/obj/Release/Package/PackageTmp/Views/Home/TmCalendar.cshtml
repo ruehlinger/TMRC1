@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "TM Calendar";
+    string fname = "";
+}
+
+<link href='Content/fullcalendar.print.css' rel='stylesheet' media='print' />
+@*
+
+
+@Scripts.Render("~/Js/fullcalendar.js")
+@Scripts.Render("~/Js/fullcalendar.min.js")
+@Scripts.Render("~/Js/calload.js")*@
+
+
+
+@*
+    <link href="@Url.Content("~/Content/tmrcLocal.css")" rel="stylesheet" type="text/css"  >
+    <link href="@Url.Content("~/Content/fullcalendar.css")" rel="stylesheet" type="text/css"  >
+    <link href="@Url.Content("~/Content/fullcalendar.print.css")" rel="stylesheet" type="text/css"  >
+    <script src="~/Js/fullcalendar.js"></script>
+    <script src="~/Js/fullcalendar.min.js"></script>
+    <script src="~/Js/calload.js"></script>
+*@
+@section styles
+{
+    @Styles.Render("~/Content/tmrcLocal.css")
+    @Styles.Render("~/Content/fullcalendar.css")
+    @Styles.Render("~/Content/fullcalendar.print.css")
+}
+
+
+
+
+<div class="content-wrapper panel main-panel">
+
+    @{
+        Html.RenderPartial("_PageHeader");           
+    }
+   
+
+    <div class="content-wrapper">
+        <div class="presentationPanel01 ">
+            <div class="panel-body">
+                <h6 style="float: right; color: #808080;">Last Updated: 03/29/16</h6>
+
+                <a href="javascript:window.print()" class="btn btn-info btn-large active"><i class="icon-print"></i> Print Calendar</a>
+                <div id='calendar'></div>
+            </div>
+        </div>
+    </div>
+ </div>

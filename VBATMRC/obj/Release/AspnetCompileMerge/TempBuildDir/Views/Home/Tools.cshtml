@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Tools";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tools</h2>
+<div>
+    <h2>Tab</h2>
+    <div style="height: 100px">
+        <div class="Target">
+            @Html.Syncfusion().Tab("tabContents", "Tab")
+        </div>
+    </div>
+    <div class="outer">
+        <div id="tabContents">
+            <ul>
+                <li><a href="#tools">Essential Tools1</a>
+                </li>
+                <li><a href="#chart">Essential Chart</a>
+                </li>
+                <li><a href="#grid">Essential Grid</a></li>
+            </ul>
+            <div id="tools">
+                Essential Tools is a collection of user
+                interface components used to create interactive
+                ASP.NET MVC applications.
+            </div>
+            <div id="chart"> @Html.Syncfusion().PercentTextBox("perc").Value(5.5).Width(222)
+                Essential Chart is a business-oriented charting
+                component. Essential Chart features
+            an advanced styles architecture that makes complex
+                multi-level formatting very easy.
+            </div>
+            <div id="grid">
+                Essential MVC Grid offers a full-featured
+                grid control with extensive support for
+                grouping and displaying hierarchical data.
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .outer
+        {
+           width:400px;
+        }
+        .Target
+        {
+            float: left;
+        }
+      </style>
+</div>

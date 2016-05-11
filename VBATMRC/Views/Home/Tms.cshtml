@@ -1,0 +1,37 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "TMS";
+}
+
+<div class="content-wrapper panel main-panel"> 
+    <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+        Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper panel main-panel" >
+        <div class="presentationPanel01">
+            <div class="panel-body">
+                <h6 style="float: right; color: #808080;">Last Updated: 7/8/14</h6>
+                <section>
+                    <ul style="list-style:none" class="list-group">
+                        <li><a href="https://www.tms.va.gov/learning/user/nativelogin.do" title="TMS Website" target="_blank">TMS Website</a></li>
+                        <li><a href="http://vaww.infoshare.va.gov/sites/EDT/VBA_TMS_Admins/Document%20Library/Forms/AllItems.aspx?FolderCTID=0x0120006570F06713860F43AC76F54828B5A08B&View=%7b9e453de0-99d1-4cd4-9d05-aaa21063dfb1%7d&RootFolder=%2Fsites%2FEDT%2FVBA%5FTMS%5FAdmins%2FDocument%20Library%2FTMS%20Job%20Aids&TreeField=Folders&TreeValue=TMS%20Job%20Aids&ProcessQStringToCAML=1&SortField=Modified&SortDir=Desc" title="VBA SharePoint TMS Job Aids" target="_blank">VBA SharePoint TMS Job Aids</a></li>
+                        <li><a href="~/Home/Placeholder/@ViewBag.Dev.ToString()" class="thumbnaildisabled" title="TMS Job Aids for TMs" target="_self">TMS Job Aids for TMs</a></li>
+                        <li><a href="http://vaww.infoshare.va.gov/sites/VALU/TMS/default.aspx" title="TMS Community of Practice SharePoint Site" target="_blank">TMS Community of Practice SharePoint Site </a></li>
+                    </ul>
+                </section>              
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+    </script>
+}

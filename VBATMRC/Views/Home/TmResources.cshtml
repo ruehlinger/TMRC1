@@ -1,0 +1,246 @@
+﻿@{
+    ViewBag.Title = "TM Resources";
+    string fname = "";
+}
+
+<link href="@Url.Content("~/content/tmrcLocal.css")" rel="stylesheet" type="text/css"  >
+
+
+
+
+
+<div class="content-wrapper panel main-panel">
+
+    @{
+        Html.RenderPartial("_PageHeader");           
+    }
+   
+    
+    <div class="content-wrapper">
+        <div class="presentationPanel01 ">
+            <div class="panel-body">
+
+                <h6 style="float: right; color: #808080;">Last Updated: 01/29/16</h6>
+                <a name="itc-top-anchor"></a>
+
+                <table id="tbl-index">
+                    <tr><th colspan="2">Index of Resources</th></tr>
+                    <tr><td><span style="color: #F00;"><strong>**NEW**</strong></span><a href="#temps">Training Development Templates</a></td><td><a href="#tmja">TM Job Aids</a></td></tr>
+                    <tr><td><a href="#itc">Instructor Training Course (ITC) Job Aids</a></td><td><a href="#links">Useful Links</a></td></tr>
+                    <tr><td><a href="#lync">Lync Job Aids</a></td><td><a href="#skills">Skills Certification Job Aids</a></td></tr>
+                    <tr><td><a href="#refs">References</a></td><td></td></tr>
+                </table>
+                <br />
+
+                <div id="expand_collapse_all">
+                    <a href="#" onclick="ddaccordion.collapseall('toggler'); return false">Collapse all</a> | <a href="#" onclick="ddaccordion.expandall('toggler'); return false">Expand all</a>
+                </div>
+
+                <a name="temps"></a>
+                <table class="table table-hover" style="width:100%" id="tbl-temps">
+                    <tr><th style="width: 215px; text-align: left;" class="toggler">&nbsp; Training Development Tool</th><th style="width: 400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -20px; " id="tbl-temps">
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>Training Checklists</strong></td></tr>
+                        <tr><td><a href="~/Assets/Documents/Standardized_VBA_Training_Development_Checklist_LongForm_050615.pdf" target="_blank">VBA Standardized Training Development Checklist (long form)</a> <br /> (05/06/15)</td><td class="active" style="width:75%">This document steps you through the process of considering all phases of development of your training session.  It’s a simple Yes/No checklist.  The long version explains/clarifies each item on the checklist. </td></tr>
+                        <tr>
+                            <td><a href="~/Assets/Documents/Standardized_VBA_Training_Development_Checklist_ShortForm_050615.pdf" target="_blank">VBA Standardized Training Development Checklist (short form)</a> <br /> (05/06/15)</td>
+                            <td class="active" style="width:75%">The only difference between the short form and the long form is that the explanations have been removed from the short form.</td>
+                        </tr>
+                        
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>Training Templates</strong></td></tr>
+                        <tr>
+                            <td><a href="~/Assets/Documents/Standardized_Training_Lesson_Plan_Template.doc" target="_blank">VBA Standardized Training Lesson Plan Template</a> <br />(07/13/15)</td>
+                            <td class="active">The Lesson Plan Template allows you to build a lesson plan that supports the PowerPoint presentation. This document is very helpful to instructors as well as course advocates, if used. It also ensures consistent delivery of training when different instructors are conducting the training.</td>
+                        <tr>
+                            <td>
+                                <a href="~/Assets/Documents/Standardized_Training_PowerPoint_Template_060315.pptx" target="_blank">
+                                    VBA Standardized Training PowerPoint Template
+                                </a> <br />(06/03/15)
+                            </td>
+                           
+                            <td class="active">This PowerPoint presentation template includes explanation of all the key elements to include in your training presentation along with some presentation guidelines.  You should view the template in Notes View to see the tips in the Notes section below each slide.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="~/Assets/Documents/Standardized_WBT_TemplateOct2014.jpg" target="_blank">
+                                    VBA Standardized WBT Example
+                                </a> <br />(01/09/15)
+                                
+                            </td>
+                            <td class="active">This image depicts an example of the WBT GUI.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="~/Assets/Documents/Training%20GUI_Standardized_Specifications_Document_121914.pdf" target="_blank">
+                                    VBA Standardized Online Training GUI Specifications Document
+                                </a> <br />(01/09/15)
+                                
+                            </td>
+                            <td class="active">This document provides specific guidelines to standardized the online instructional courseware interface for use in the Department of Veterans Affairs.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="~/Assets/Documents/Standardized_Training_Lesson_Plan_Sample.doc" target="_blank">VBA Standardized Training Lesson Plan Sample</a> <br />(11/20/15)
+                            </td>
+                            <td class="active">The Lesson Plan Sample corresponds directly with the PowerPoint template and provides examples of how you might develop your own lesson plan to support your PowerPoint presentation.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://www.ttande.org/evaluation/uniserv_level1/form/default.asp?cid=863 " target="_blank">Training Development Questionnaire Feedback Form</a>
+                            </td>
+                            <td class="active">Fill out this form to provide feedback on the templates and checklist.</td>
+                        </tr>
+
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>Specifications/Reports</strong></td></tr>
+
+                        <tr>
+                            <td><a href="~/Assets/Documents/Standardized_Training_Summary_Report_121814.pdf" target="_blank">VBA Standardized Training Summary Report</a> (01/09/15)</td>
+                            <td class="active">You’ll fill in the blanks on this document once training is complete.</td>
+                        </tr>
+                        <tr id="temps-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+
+                </div>
+                <a name="tmja"></a>
+                <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-tmja">
+                    <tr><th style="width: 215px; text-align: left" class="toggler">&nbsp; TM Job Aids</th><th style="width:400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-tmja">
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>Compensation Service Job Aids</strong></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY16_CS_NTC_Progress_Report_Job_Aid.pdf" target="_blank">FY16 CS NTC Progress Report Job Aid</td><td class="active" style="width:75%">This job aid instructs TMs and VBA TMS administrators on gathering the necessary data in TMS and converting it to the required format via the <a href="https://www.ttande.org/ntcprogressreport/" target="_blank">VBA NTC Progress Reporting Application</a>.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY16_CS_NTC_Class_Assignment_Job_Aid.pdf" target="_blank">FY16 CS NTC Class Assignment Job Aid</a></td><td class="active">This job aid provides TMs and VBA TMS administrators with instructions on adding employees to (and removing them from) FY16 Compensation Service classes in TMS per the Compensation Service <a href="https://vaww.compensation.pension.km.va.gov/" target="_blank"> M21-3 Training Program Manual</a>.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/Comp_Service_One-time_Mandated_Job_Aid_v1.3.doc" target="_blank">Compensation Service One-Time Mandated Job Aid</a></td><td class="active">This job aid is designed to instruct TMs on running reports to track Compensation Service One-Time Mandated item completions.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/12Month_Challenge_Roadmap.pdf" target="_blank">12-Month Challenge Roadmap</a></td><td class="active">The 12-Month Challenge Roadmap is a graphical representation of the actions that will take place in TMS during a VSR or RVSR's first year on the job.</td></tr>
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>Pension & Fiduciary Service Job Aids</strong></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY16_Pen_NTC_Progress_Report.pdf" target="_blank">FY16 PMC NTC Progress Report Job Aid</a></td><td class="active" style="width:75%" rowspan="3">This job aid instructs TMs on gathering Pension NTC completion data in TMS and converting it to the required format via the PMC VSR and RVSR Progress Report Shells.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/Pension_RVSR_Shell_FY16.xls" target="_blank">PMC RVSR Progress Report Shell</a></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/Pension_VSR_Shell_FY16.xls" target="_blank">PMC VSR Progress Report Shell</a></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY16_PMC_NTC_Class_Assignment_Job_Aid.pdf" target="_blank">FY16 Pension NTC Class Assignment Job Aid</a></td><td class="active">This job aid provides TMs and VBA TMS administrators with instructions on adding employees to (and removing them from) Pension classes in TMS per the Pension and Fiduciary Service's <a href="https://www.ttande.org/VBA_Learning_Catalog/Pension/FY16_Pension_NTC_SOP.doc" target="_blank"> FY16 NTC SOP for PMC Personnel</a></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY16_Fiduciary_NTC_Class_Assignment_Job_Aid.pdf" target="_blank">FY16 Fiduciary NTC Class Assignment Job Aid</a></td><td class="active">This job aid provides TMs and VBA TMS administrators with instructions on adding employees to (and removing them from) Fiduciary employee classes in TMS, per the <a href="https://www.ttande.org/VBA_Learning_Catalog/Fiduciary/SOP/Fiduciary_FY16_NTC_SOP.pdf" target="_blank">Fiduciary FY16 NTC SOP</a>.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY16_Fiduciary_NTC_Progress_Report_Job_Aid.pdf" target="_blank">FY16 Fiduciary NTC Progress Report Job Aid</a></td><td class="active">This job aid instructs TMs and VBA TMS administrators from the Fiduciary Hubs on gathering the necessary data in TMS and converting it to the required format via the <a href="https://www.ttande.org/ntcprogressreport/" target="_blank">VBA NTC Progress Reporting Application</a>.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/Navigating_the_Fidcuciary_NTC_in_the_VBA_Learning_Catalog.pdf" target="_blank">Navigating the Fiduciary NTC in the VBA Learning Catalog</a></td><td class="active">This job aid provides VBA employees with instructions on searching for Fiduciary-specific items in the VBA Learning Catalog</td></tr>
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>VR&E Service Job Aids</strong></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY15_VRE_Mandatory_NTC_Tracking_Job_Aid.pdf" target="_blank">FY15 VR&E Mandatory NTC Tracking Job Aid</a></td><td class="active" style="width:75%">This job aid provides training managers with instructions on running on-demand reports to track their employees’ progress and ensure they are on target to meet their annual VR&E training requirements, as identified within each job position’s <a href="http://vretraining.vba.va.gov/" target="_blank">FY15 NTC Checklist.</a></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/FY15_VRE_Non-Mandatory_Tracking_Job_Aid.pdf" target="_blank">FY15 VR&E Non-Mandatory NTC Tracking Job Aid</a></td><td class="active">This job aid provides training managers with instructions on adding/removing VR&E Station-Determined and Professional Development items to/from their respective curricula for tracking purposes.</td></tr>
+                        <tr><td colspan="2" style="background-color:gray; color:white;"><strong>General Training Manager and TMS Administrator Job Aids</strong></td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/Comma_Widget_Job_Aid_v1.2.doc" target="_blank">Comma Widget Job Aid</a></td><td class="active">This job aid instructs VBA employees on how to convert lists of usernames, email addresses, etc., into comma- or semicolon-separated lists using the <a href="https://www.ttande.org/CommaWidget/" target="_blank">Comma Widget tool</a>.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/TMS_Class_Assignment_Job_Aid.pdf" target="_blank">TMS Class Assignment Job Aid</a></td><td class="active">This job aid provides TMs and VBA TMS administrators with instructions on adding employees to (and removing them from) classes in TMS.</td></tr>
+                        <tr><td><a href="https://www.ttande.org/VBA_Learning_Catalog/EDT/Job_Aids/Post-Training_Evaluation_Procedures_Job_Aid.pdf" target="_blank">VBA Post-Training Evaluation Procedures Job Aid</a></td><td class="active">This job aid provides information on the VBA Post-Training Evaluation assignment and compliance processes.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/TPSS_Course_Issues_Job_Aid.pdf" target="_blank">TPSS Course Issues Job Aid</a></td><td class="active">This job aid will help VBA Training Managers pinpoint the cause of an employee’s TPSS issue and determine the recommended resolution. Training Managers should contact the VBA TPSS Support Team at <a href="mailto:vba-tpss-support@gdit.com">vba-tpss-support@gdit.com</a> for additional questions regarding TPSS modules.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/Top_10_TMS_Reports.pdf" target="_blank">Top 10 TMS Reports</a></td><td class="active">This job aid lists the top 10 TMS reports as identified by the VBA Curriculum Support Team. Training Managers should contact the VBA Curriculum Support Team at <a href="mailto:VbaCurriculumSupport@camber.com">VbaCurriculumSupport@camber.com</a> for additional questions regarding TMS reports.</td></tr>
+                        <tr id="tmja-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+                </div>
+                <a name="itc"></a>
+                <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-itc">
+                    <tr><th style="width: 215px; text-align: left" class="toggler">&nbsp; ITC Job Aids</th><th style="width:400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-itc">
+                        <tr><td><a href="~/Assets/Documents/Action and Verbs Quick List.pdf" target="_blank">Action Verbs Quick List</a><br />(9/26/12)</td><td class="active" style="width:75%">This job aid will help TMs select the correct verb when they review or develop training objectives.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/Training Methods Resources.pdf" target="_blank">Training Methods Resources</a><br />(9/26/12)</td><td class="active">This job aid will help TMs select appropriate training media or determine if an appropriate media was used.  </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Tips to Avoid Death by PowerPoint.pdf" target="_blank">Tips to Avoid “Death by PowerPoint"</a><br />(7/31/12)</td><td class="active">This job aid will help TMs develop more effective PowerPoint presentations or in their review of previously developed presentations. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/The Art of Asking Questions.pdf" target="_blank">The Art of Asking Questions</a><br />(8/29/12)</td><td class="active">This job aid will help TMs mentor instructors as to the effectiveness of their management of classroom questions. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Example of Disruptive Behaviors.pdf" target="_blank">Example of Disruptive Behaviors</a><br />(9/24/12)</td><td class="active">This job aid will help TMs mentor instructors who are having difficulty in managing students who display disruptive behaviors during training. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/When to Ask Questions Resource.pdf" target="_blank">When to Ask Questions Resource</a><br />(8/29/12)</td><td class="active">This job aid will help TMs mentor instructors who are having difficulty knowing when to ask questions of the students in order to check their comprehension of the training material. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Example of Classroom Training Media.pdf" target="_blank">Example of Classroom Training Media</a><br />(7/31/12)</td><td class="active">This job aid will help TMs select more appropriate media for classroom training.  </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Responding with Rapport.pdf" target="_blank">Responding with Rapport</a><br />(8/29/12)</td><td class="active">This job aid will help TMs evaluate classroom instruction or mentor instructors who are having difficulty knowing how to respond to questions from students. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/The Art of Asking Questions in DL.pdf" target="_blank">The Art of Asking Questions in DL</a><br />(9/19/12)</td><td class="active">This job aid will help TMs mentor instructors as to the effectiveness of their management of student questions in a distributed learning environment. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Technical Challenges.pdf" target="_blank">Technological Challenges</a><br />(8/28/12)</td><td class="active">This job aid will help TMs resolve or mitigate technological issues that might arise during distributed training.  </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Example of Placeholder PowerPoint Slides.pdf" target="_blank">Example of Placeholder PowerPoint Slides</a><br />(9/12/12)</td><td class="active">This file contains several placeholder slides frequently needed during distributed training.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/Example of Implementing Training Methods.pdf" target="_blank">Example of Implementing Training Methods</a><br />(10/1/12)</td><td class="active">This job aid provides a checklist that can be used during a dress rehearsal for a virtual training class.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/Example of Strengths and Weaknesses.pdf" target="_blank">Example of Strengths and Weaknesses</a><br />(9/21/12)</td><td class="active">This job aid will help TMs select more appropriate media for use in a distributed training environment. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Responding with Rapport in DL.pdf" target="_blank">Responding with Rapport in DL</a><br />(8/29/12)</td><td class="active">This job aid will help TMs evaluate DL instruction or mentor instructors who are having difficulty knowing how to respond to questions from students in a DL environment. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Distance Learning Instructor Evaluation.pdf" target="_blank">Distributed Learning Instructor Evaluation Checklist</a><br />(04/24/15)</td><td class="active">This job aid provides a useful checklist for evaluating and mentoring instructors conducting distributed training. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/Classroom Instructor Evaluation.pdf" target="_blank">Classroom Instructor Evaluation Checklist</a><br />(04/24/15)</td><td class="active">This job aid provides a useful checklist for evaluating and mentoring instructors conducting classroom training. </td></tr>
+                        <tr id="itc-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+                </div>
+                <a name="lync"></a>
+                <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-lync">
+                    <tr><th style="width: 215px; text-align: left" class="toggler">&nbsp; Lync Job Aids</th><th style="width:400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-lync">
+
+
+                        <tr><td><a href="~/Assets/Documents/4.2.a Join a Lync Meeting via Web or Lync Attendee.pptx" target="_blank">Join a Lync Meeting via Web or Lync Attendee</a><br />(3/21/13)</td><td class="active" style="width:75%">This quick reference describes the tasks you will most commonly perform when using Microsoft® Lync™ 2010. An integrated call management application that enables you to manage many conversations at once by quickly handling and routing phone calls and instant messages. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.2.b Local Administration Documentation for Lync.pptx" target="_blank">Local Administration Documentation for Lync</a><br />(3/11/13)</td><td class="active">This PowerPoint presentation provides local administrators an overview of Microsoft® Lync™ 2010 and the process of administering system users. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.2.c Lync 2010 Attendant Quick Reference.pdf" target="_blank">Lync 2010 Attendant Quick Reference</a><br />(4/3/14)</td><td class="active">This quick reference describes the tasks you will most commonly perform when using Microsoft&reg; Lync™ 2010 Attendant, an integrated call management application that enables you to manage many conversations at once by quickly handling and routing phone calls and instant messages. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.2.d Lync 2010 Attendee Quick Reference.pdf" target="_blank">Lync 2010 Attendee Quick Reference</a><br />(4/3/14)</td><td class="active">This quick reference describes the tasks you will most commonly perform when you are an attendee of a Microsoft® Lync™ 2010 online meeting. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.2.e Lync 2010 Conferencing Quick Reference.pdf" target="_blank">Lync 2010 Conferencing Quick Reference</a><br />(4/3/14)</td><td class="active">This quick reference describes the tasks you will most commonly perform when wanting to establish or schedule a Microsoft® Lync™ 2010 online conference. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.2.f Lync 2010 Instant Messaging and Presence Quick Reference.pdf" target="_blank">Lync 2010 Instant Messaging and Presence Quick Reference</a><br />(4/3/14)</td><td class="active">This quick reference describes how to instant message and let others know of your presence once you are established in a Microsoft® Lync™ 2010 online conference. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.2.g Lync 2010 Sharing and Collaboration Quick Reference.pdf" target="_blank">Lync 2010 Sharing and Collaboration Quick Reference</a><br />(4/3/14)</td><td class="active">This quick reference describes how to share your desktop and collaborate with others once you are established in a Microsoft® Lync™ 2010 online conference. </td></tr>
+
+                        <tr id="lync-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+                </div>
+                <a name="skills"></a>
+                <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-skills">
+                    <tr><th style="width: 215px; text-align: left" class="toggler">&nbsp; Skills Certification Job Aids</th><th style="width:400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-skills">
+                        <tr><td><a href="~/Assets/Documents/4.4.1 FL 12-19 Skill Certification.pdf" target="_blank">FL 12-19 Skills Certification</a><br />(7/30/12)</td><td class="active" style="width:75%">This Fast Letter states the requirements for implementing the recent agreement between VA and American Federation of Government Employees (AFGE) concerning Skills Certification of VBA claims processors.  </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.4.2 FL 12-19 Skill Certification Enclosure.pdf" target="_blank">FL 12-19 Skills Certification Enclosure</a><br />(7/30/12)</td><td class="active">This document contains FAQs to FL 12-19.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.4.3 OFO E-mail with Instructions.pdf" target="_blank">OFO E-mail with Instructions</a><br />(1/15/13)</td><td class="active">This letter provides an example of guidance provided to regional office managers and employees regarding the Veterans Service Representative (VSR) Skills Certification testing scheduled for February 12, 2013. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.4.4 Public Law 110.pdf" target="_blank">Public Law 110</a><br />(10/10/08)</td><td class="active">Law that requires certification and training of employees of the Veterans Benefits Administration responsible for processing claims. </td></tr>
+                        <tr><td><a href="~/Assets/Documents/4.4.5-Article67-Skill-Cert.pdf" target="_blank">Article 67 Skills Certification</a><br />(3/20/12)</td><td class="active">This document contains AFGE Article 67 (Skills Certification). It includes, but is not limited to, information on test: applicability, administration, notification of results, environment, preparation, and feedback. </td></tr>
+                        <tr id="skills-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+
+                </div>
+                <a name="links"></a>
+                <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-links">
+                    <tr><th style="width: 215px; text-align: left" class="toggler">&nbsp; Useful Links</th><th style="width:400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -39px;" id="tbl-links">
+                        <tr><td><a href="http://vaww.va.gov/acronyms/fulllist.cfm#V" target="_blank">VA Acronym Website</a><br />(N/A)</td><td class="active">Link to a VA website that provides the definitions for frequently used acronyms.</td></tr>
+                        <tr><td><a href="../TmCalendar">Monthly TM Conference Calls</a><br />(N/A)</td><td class="active">Link to the TM Calendar where you can find information on past and future Monthly TM Conference Calls.</td></tr>
+                        <tr><td><a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert" target="_blank">Compensation Service Skills Certification Tests</a><br />(5/16/14)</td><td class="active" style="width:75%">Link to information about the Skills Certification Tests for Coaches, DROs, RVSRs, Sr. VSRs, and VSRs. (Note: AQRS Skills Certification Tests are coming soon).</td></tr>
+                        <tr><td><a href="http://vretraining.vba.va.gov" target="_blank">VR&amp;E Skills Certification Test</a><br />(5/02/14)</td><td class="active" style="width:75%">Link to information pertaining to the VRC Skills Certification Test.</td></tr>
+                        <tr><td><a href="http://cptraining.vba.va.gov/C&P_Training/vsr/vsr_entry.htm" target="_blank">Compensation Service Challenge Training VSR</a><br />(5/27/14)</td><td class="active">Link to information pertaining to VSR Challenge Training.</td></tr>
+                        <tr><td><a href="http://cptraining.vba.va.gov/C&P_Training/rvsr/rvsr_entry.htm" target="_blank">Compensation Service Challenge Training RVSR</a><br />(5/27/14)</td><td class="active">Link to information pertaining to RVSR Challenge Training.</td></tr>
+                        <br />
+
+
+                        <tr id="links-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+                </div>
+                <a name="refs"></a>
+                <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-refs">
+                    <tr><th style="width: 215px; text-align: left" class="toggler">&nbsp; References</th><th style="width:400px;">Description</th></tr>
+                </table>
+
+                <div class="element">
+                    <table class="table table-hover" style="width: 100%; margin-top: -20px;" id="tbl-refs">
+                        <tr><td><a href="~/Assets/Documents/5 Ways to Be a Motivating Leader.pdf" target="_blank">5 Ways to Be a Motivating Leader</a><br />(12/4/13)</td><td class="active" style="width:75%">This brief paper presents five traits that can help you become a more well-rounded leader.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/Competency-based-training-article.pdf" target="_blank">Competency-Based Training article</a><br />(5/24/12)</td><td class="active">This brief paper defines competencies and describes how they can benefit organizations.</td></tr>
+                        <tr><td><a href="~/Assets/Documents/TrainerRefGuide.pdf" target="_blank">Reference Guide for Instructors and Facilitators</a><br />(5/2001)</td><td class="active">This guide provides information that can assist in transforming instructors into facilitators so they can better "help any group achieve its goals efficiently and enjoyably."</td></tr>
+                        <tr><td><a href="~/Assets/Documents/Training-vs-Learning.pdf" target="_blank">Training vs. Learning</a><br />(5/29/12)</td><td class="active">This paper examines the difference between training and learning. It outlines some of the traditional definitions of these terms and their implications for human resource development.</td></tr>
+
+                        <tr id="refs-last-cell"><td></td><td><a href="#itc-top-anchor"><img src="~/images/upErrow.gif" /></a><a href="#itc-top-anchor">Top</a></td></tr>
+                    </table>
+
+                </div>
+
+               
+
+
+            </div>
+                                        </div>
+                                    </div>
+                                </div>

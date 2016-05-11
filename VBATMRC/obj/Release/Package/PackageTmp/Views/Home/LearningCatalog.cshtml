@@ -1,0 +1,30 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "VBA Learning Catalog";
+}
+
+
+<div class="content-wrapper panel main-panel">    <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+        Html.RenderPartial("_Announcements", new Announcement());
+        Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <div class="panel-body">
+                <a target="_blank"  href="http://hvnc.gdit.com/lc/"  >http://hvnc.gdit.com/lc/</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+    </script>
+}

@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "ExpandCollapseTest";
+}
+
+<h2>ExpandCollapseTest</h2>
+
+@section styles
+{
+    <style type="text/css">
+        ul{
+            position:relative;
+            list-style:none;
+            margin-top:10px;
+            margin-left:-25px;
+          
+            
+           
+        }
+        .answer {
+            font-family: Arial,Verdana;
+            font-size: 12px;
+        }
+
+        .question {
+            cursor: pointer;
+            font-family: 'Times New Roman';
+            font-size: 16px;
+            color: red;
+        }
+
+        #faq-ulist {
+            list-style: none;
+        }
+    </style>
+}
+
+<div class="content-wrapper panel main-panel">
+
+
+    @{
+       
+        //Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <div class="panel-body">
+
+                <section id="faq-list">
+                    <ul id="faq-ulist">
+                        <li>
+                          
+
+                           <h3 class="question">Instructor Training Course (ITC) Job Aids</h3>
+                          
+
+                                <ul class="answer">
+                                    <li>
+                                        <a href="../home/TrainingFundamentalsTest">Training Fundamentals</a>
+                                    </li>
+                                    <li><a href="#">Classroom-Based Aids</a></li>
+                                    <li><a href="#">Distributed Learning Aids</a></li>
+                                </ul>
+
+
+                          
+                        </li>
+                       
+                    </ul>
+                </section>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+        $(document).ready(function () {
+
+            $('#faq-list h3').next('.answer').slideToggle(0);
+
+            $('#faq-list h3').click(function () {
+
+                $(this).next('.answer').slideToggle(500);
+               
+
+            });
+        });
+    </script>
+}

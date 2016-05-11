@@ -1,0 +1,54 @@
+﻿@using VBATMRC.Models
+@{
+    ViewBag.Title = "TM Duties & Responsibilities";
+}
+
+@section styles
+{
+    <style type="text/css">
+        #drlist {
+            list-style: none;
+        }
+    </style>
+
+}
+<div class="content-wrapper panel main-panel">
+    <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+            Html.RenderPartial("_Announcements", new Announcement());
+        }
+        Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            <div class="panel-body">
+               <h6 style="float: right; color: #808080;">Last Updated: 4/14/15</h6>
+                <p>&nbsp;</p>
+                <section>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="~/Assets/Documents/2.1 Program Specialist Training Manage_GS12-FY08.pdf" target="_blank">GS-12 Position Description for TMs (2015)</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="~/Assets/Documents/TM NPS Draft 20150402.pdf" target="_blank">TM National Performance Standards</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="~/Assets/Documents/2.2 TM Standard Operating Procedures.pdf" target="_blank">TM Standard Operating Procedures</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+    </script>
+}

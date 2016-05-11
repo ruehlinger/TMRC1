@@ -1,0 +1,690 @@
+﻿@using VBADashboard01.Controllers
+@{
+    ViewBag.Title = "Multicolumn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Tools Features:</h2>
+<br/>
+<li> Editors</li>
+<li> Multi Column Drop Down</li>
+<li> Waiting PopUp</li>
+<li> Rich Text Editor</li>
+<li> Tree View</li>
+<li> Menu</li>
+<li> Toolbar</li>
+<li> Ribbon</li>
+<li> Splitter</li>
+<li> Gallery View</li>
+<li> Upload</li>
+<li> Progress Bar</li>
+<li> Rating</li>
+<li> Rotator</li>
+<li> Accordion</li>
+<li> Slider</li>
+<li> DatePicker</li>
+<li> Tab</li>
+<li> Theme - Metro</li>
+<br/>
+<div>
+     <br /><br />
+    <div class="top">
+      <h2>Tools Editors</h2>
+      <table cellspacing="5" style="border-spacing:10px; border-collapse:separate">
+        <tr> 
+          <td> Autocomplete TextBox  </td> <td> @Html.Syncfusion().AutocompleteTextBox("Autocomplete").RequestMapper("GetData").DropDown(true).Width(160)  </td></tr>
+        <tr>
+          <td> Numeric TextBox  </td> <td> @Html.Syncfusion().NumericTextBox("quantity").MinValue(1).MaxValue(20).Value(1).Width(160)  </td></tr>
+        <tr>
+          <td> Percent TextBox  </td> <td> @Html.Syncfusion().PercentTextBox("discount").Value(6.5).Width(160)  </td>
+        </tr>
+         <tr>  <td> Drop Down </td>
+                <td> @Html.Syncfusion().GenericDropDown("bankss").TargetContentId("allbanks").Width(160).PopupPanelHeight(100).ClientSideOnClick("ClientSideOnClick") </td>  </tr>
+              <tr>  <td> Mask Edit TextBox</td>
+                  <td> @Html.Syncfusion().MaskEditTextBox("card").Mask("9999-9999-9999-9999").Width(160) </td> 
+             <tr>
+          <td>
+            TextBox
+          </td>
+            <td>
+                @Html.TextBox("WordVerification")
+            </td>
+      <tr>
+          <td>CheckBox</td>
+      <td>
+                @Html.CheckBox("Terms") </td>
+      </tr>
+             </tr>
+                  <tr>
+                  <td>
+                 Captcha Control
+              </td>
+              <td>
+              @Html.Syncfusion().CaptchaControl("Captcha1").Width(160)
+              </td>
+                      </tr>
+          </tr>
+      <tr>
+          <td>SplitButton</td>
+      <td>
+      <br />
+        @Html.Syncfusion().SplitButton("btnSplit").Text("Submit").Height(40).Width(100).Items(items =>
+         {
+                    items.Add().Text("Clear Fields");
+                    items.Add().Text("Submit and Close");
+         })
+      </td>
+      </tr>
+    </table>
+  </div>
+<div id="allbanks" class="visibleHide">
+        <div>
+            <a>Hdfc Bank</a></div>
+        <div>
+           <a>ICICI Bank</a></div>
+        <div>
+            <a>Bank One</a></div>
+        <div>
+            <a>Bank First</a></div>
+        <div>
+            <a>Union Bank</a></div>
+        <div>
+            <a>Central Bank</a></div>
+    </div>
+<style type="text/css">
+        .top
+        {
+            font-family:Sans-Serif;
+            font-size:14px;
+            width:550px;
+       }
+       .table
+        {
+            margin-left: 20px;
+        }
+        h2
+        {
+            font-weight:lighter;
+            font-size:18px;
+            font-family:Sans-Serif;
+            width:350px;
+        }
+        td
+        {
+            width:180px;
+        }
+        #WordVerification
+        {
+            width:160px;
+        }
+    </style>
+<script type="text/javascript">
+    function ClientSideOnClick(sender, args) {
+       var text = "";
+        if (args._target.nodeName.toLowerCase() == "img")
+            text = $(args._target.parentNode).text().trim();
+        else
+            text = args._text;
+        sender.setText(text);
+    }
+</script>
+    <div style="height:100px">
+        <h2>MultiColumn DropDown</h2>
+        <br /><br />
+        @(Html.Syncfusion().MultiColumnDropDown<Student1>("Multicolumndropdown", "dropdown", columns =>
+                    {
+                    columns.Add(c => c.UniversityCode).HeaderText("Univ Code").Width(100);
+                    columns.Add(c => c.Title).HeaderText("Title").Width(100);
+                    columns.Add(c => c.CourseFees).HeaderText("Course fees").Width(100);
+                    columns.Add(c => c.CGPA).HeaderText("CGPA").Width(100);
+                    }))
+    </div>
+          <div style="width:500px;">
+          <h2>WaitingPopup</h2>
+          <br /><br />
+          <div class="controldiv">
+          <div id="targetArea">
+          </div>
+          @Html.Syncfusion().WaitingPopup("mypopup").TargetId("targetArea").AutoDisplay(true).ShapeHeight(220).ShapeWidth(300)
+          </div>
+          </div>
+    <div>
+      <h2></h2>
+        <br /><br />
+        <br />
+        <h2>RichTextEditor</h2>
+        <br /><br />
+        <table>
+          <tr>
+             <td> @Html.Syncfusion().RichTextEditor("RichTextEditor1").Width(786) </td>
+          </tr>
+        </table>
+    </div>
+            <div>
+              <div id="treeview" style="overflow:hidden">
+              <h2>TreeView</h2>
+              @(Html.Syncfusion().TreeView("myTreeView", "treeView") .Height(150).Width(200))
+            </div>
+              <ul id="treeView" class="visibleHide">
+              <li id="ASP.NET">
+              ASP.NET
+              <ul>
+                <li>Essential Grid</li>
+                <li>Essential Schedule</li>
+                <li>Essential Tools</li>
+                <li id="aspEC">Essential Chart</li>
+                <li id="aspED">Essential Diagram</li>
+              </ul>
+              </li>
+              <li id="bko">
+              BackOffice Products
+              <ul>
+                <li id="bkEP">Essential PDF</li>
+                <li id="bkEXls">Essential XlsIO</li>
+                <li id="bkEDoc">Essential DocIO</li>
+                <li id="bkCalc">Essential Calculate</li>
+                <li id="bkGrp">Essential Grouping</li>
+              </ul>
+              </li>
+              <li id="uiProd">
+              UI Products
+              <ul>
+                <li id="uiEE">Essential Edit </li>
+                <li id="uiEH">Essential HTMLUI </li>
+                <li id="uiEC">Essential Chart </li>
+                <li id="uiEG">Essential Grid </li>
+              </ul>
+              </li>
+              <li id="silverlight">
+              Silverlight
+              <ul>
+                <li id="silvertools">Essential Tools </li>
+                <li id="silvergauge">Essential Gauge </li>
+                <li id="silverchart">Essential Chart </li>
+                <li id="silvergrid">Essential Grid </li>
+              </ul>
+              </li>
+              <li id="wpf">
+              WPF
+              <ul>
+                <li id="wpfgrid">Essential Grid</li>
+                <li id="wpfschedule">Essential Schedule</li>
+                <li id="wpftools">Essential Tools</li>
+                <li id="wpfchart">Essential Chart</li>
+                <li id="diagram">Essential Diagram</li>
+              </ul>
+              </li>
+              </ul>
+            </div>
+            <div>
+                <br />
+                <h2>Menu</h2>
+                <div id="Target">
+                @{Html.Syncfusion().Menu("MyItemsMenu", new { style = "outline:0 none;" })
+                .Mode(MenuModel.ModeType.NormalMenu)
+                .Items(items =>
+                {
+                  items.Add().Text("File").Value("1").Children(child =>
+                  {
+                    child.Add().Text("New");
+                    child.Add().Text("Open");
+                    child.Add().Text("Save");
+                    child.Add().Text("Save As");
+                    child.Add().Text("Print Preview");
+                    child.Add().Text("Print");
+                    child.Add().Text("Close");
+                  });
+                  items.Add().Text("Edit").Value("2").Children(child =>
+                  {
+                    child.Add().Text("Undo");
+                    child.Add().Text("Redo");
+                    child.Add().Text("Cut");
+                    child.Add().Text("Copy");
+                    child.Add().Text("Paste");
+                  });
+                  items.Add().Text("Insert").Value("3").Children(child =>
+                  {
+                    child.Add().Text("Page Numbers");
+                    child.Add().Text("Table");
+                    child.Add().Text("Picture");
+                    child.Add().Text("Comment");
+                    child.Add().Text("Links");
+                    child.Add().Text("Symbols");
+                    child.Add().Text("Diagram");
+                    child.Add().Text("TextBox");
+                    child.Add().Text("Data Time");
+                  });
+                  items.Add().Text("Format").Value("4").Children(child =>
+                  {
+                    child.Add().Text("Font").Children(childs =>
+                    {
+                      childs.Add().Text("Arial");
+                      childs.Add().Text("Arial Black");
+                      childs.Add().Text("Arial Narrow");
+                      childs.Add().Text("Courier");
+                      childs.Add().Text("Gaurand");
+                      childs.Add().Text("Times New Roman");
+                      childs.Add().Text("Vrendra");
+                      childs.Add().Text("Helvatica");
+                      childs.Add().Text("Impact");
+                    });
+                    child.Add().Text("Paragraph");
+                    child.Add().Text("Bullets and Numbering");
+                    child.Add().Text("Borders and Shading");
+                    child.Add().Text("Columns");
+                    child.Add().Text("Tabs");
+                    child.Add().Text("Change Case");
+                  });
+                  items.Add().Text("View").Value("5").Children(child =>
+                  {
+                    child.Add().Text("Normal");
+                    child.Add().Text("Web Layout");
+                    child.Add().Text("Print Layout");
+                    child.Add().Text("Task Pane");
+                  });
+                  items.Add().Text("Tools").Value("6").Children(child =>
+                  {
+                    child.Add().Text("Spelling and Grammar");
+                    child.Add().Text("Research");
+                    child.Add().Text("Language");
+                    child.Add().Text("Word Count");
+                    child.Add().Text("Track Changes");
+                    child.Add().Text("Merge Documents");
+                  });
+                }).Render();
+            }
+              </div>
+            <style type="text/css">
+              #Target
+              {
+              height: 200px;
+              float: left;
+              }
+              </style>
+          </div>
+<br />
+    <div>
+      <h2>Toolbar</h2>
+      <br /><br />
+      <div class="Target">
+        @Html.Syncfusion().Toolbar("Toolbar1").TargetId("ToolbarItems1")
+      </div>
+    <div id="ToolbarItems1" class="visibleHide">
+        <ul>
+            <li id="New" title="New [Ctrl + N]">
+                <div class="new barcontent" /></li>
+            <li id="Open" title="Open [Ctrl + O]">
+                <div class="openremote barcontent" /></li>
+            <li id="Save" title="Save [Ctrl + S]">
+                <div class="savelocal barcontent" /></li>
+            <li id="Print" title="Print [Ctrl + P]">
+                <div class="print barcontent" /></li>
+        </ul>
+        <ul>
+            <li id="InsertTable" title="InsertTable">
+                <div class="inserttable barcontent" /></li>
+            <li id="InsertCell" title="Insert Cell">
+                <div class="inserttablecell barcontent" /></li>
+            <li id="InsertRow" title="Insert Row">
+                <div class="inserttablerow barcontent" /></li>
+            <li id="MergeCells" title="Merge Cells">
+                <div class="mergetablecells barcontent" /></li>
+            <li id="SplitCells" title="Split Cells">
+                <div class="splittablecells barcontent" /></li>
+        </ul>
+        <ul>
+            <li id="InsertDate" title="Insert Date">
+                <div class="insertdate barcontent" /></li>
+            <li id="InsertTime" title="Insert Time">
+                <div class="inserttime barcontent" /></li>
+        </ul>
+  </div>
+  <style type="text/css">
+        .Target
+        {
+            float: left;
+        }
+        .barcontent
+        {
+            background-image:url("/Content/SyncfusionImages/sfToolbar.png") ;
+            background-repeat: no-repeat;
+            width: 23px;
+            height: 25px;
+        }
+        .insertdate{ background-position: 0 0; } 
+        .inserttable{ background-position: 0 -72px; } 
+        .inserttablecell{ background-position: 0 -144px; } 
+        .inserttablerow{ background-position: 0 -216px; } 
+        .inserttime{ background-position: 0 -288px; } 
+        .mergetablecells{ background-position: 0 -360px; } 
+        .new{ background-position: 0 -432px; } 
+        .openremote{ background-position: 0 -504px; } 
+        .print{ background-position: 0 -576px; } 
+        .savelocal{ background-position: 0 -648px; } 
+        .splittablecells{ background-position: 0 -720px; } 
+    </style>
+    </div>
+<br />
+     <div>
+      <h2>Ribbon</h2>
+      <br /><br />
+        @{Html.Syncfusion().Ribbon("ribbon").Title("Getting started").Height(System.Web.UI.WebControls.Unit.Pixel(130))
+          .Width(System.Web.UI.WebControls.Unit.Pixel(750))
+          .ApplicationMenuType(AppMenuType.ApplicationMenu).ApplicationMenuText("File").ApplicationMenu(applicationMenu =>
+          {
+              applicationMenu.Add().Text("Save").SpriteCSS("Save");
+              applicationMenu.Add().Text("SaveAs").SpriteCSS("saveas16");
+              applicationMenu.Add().Text("Open").SpriteCSS("folder");
+              applicationMenu.Add().Text("Close").SpriteCSS("folderclosed");
+          })
+    .BackStagePage(page =>
+    {
+        page.Add().Text("Page1").PartialView("ViewUserControl1");
+        page.Add().Text("Page2").PartialView("ViewUserControl2");
+    })
+    .TabContext(ribbonTabContext =>
+    {
+        ribbonTabContext.Add().Tabs(ribbonTab =>
+        {
+            ribbonTab.Add().Text("Home").Groups(ribbonGroup =>
+            {
+                ribbonGroup.Add().ShowExpander(true).Text("Clipboard").GroupDivision(groupDivision =>
+                {
+                    groupDivision.Add().RibbonButton(b =>
+                    {
+                        b.Add().Id("Cut1").Text("Cut").Height(25).Width(66).SpriteCss("Cut").ImagePosition(ImagePositions.Left).ClientSideOnClick("InvokeClick");
+                        b.Add().Id("Copy1").Text("Copy").Height(25).Width(76).SpriteCss("Copy").ImagePosition(ImagePositions.Left).ClientSideOnClick("InvokeClick");
+                        b.Add().Id("Paste1").Text("Paste").Height(25).Width(80).SpriteCss("Copy").ImagePosition(ImagePositions.Left).ClientSideOnClick("InvokeClick");
+                    });
+                });
+                ribbonGroup.Add().ShowExpander(true).Text("Styles").GroupDivision(groupDivision =>
+                {
+                    groupDivision.Add().ContentTemplate(
+                         @<div>
+                                    @{Html.Syncfusion().GalleryView("galleryCopyRibbon").Items(item1 =>
+                                      {
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading1.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading2.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading3.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Intense.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading1.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading2.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading3.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Intense.png"));
+                                      }).ExtraItem(extraItem =>
+                                      {
+                                          extraItem.Add().Text("Save Selection as new quick style");
+                                          extraItem.Add().Text("Clear Formatting");
+                                          extraItem.Add().Text("Apply Styles");
+                                      }).PopUpHeight(System.Web.UI.WebControls.Unit.Pixel(100)).ItemToShow(5).Width(System.Web.UI.WebControls.Unit.Pixel(200))
+                                                .Render();}
+                                </div>);
+                        });
+                        ribbonGroup.Add().ShowExpander(true).Text("Editing").GroupDivision(groupDivision =>
+                            {
+                                groupDivision.Add().RibbonButton(b =>
+                                    {
+                                        b.Add().Id("find").Text("Find").Height(25).Width(68).ArrowPosition(ArrowPositions.Right).SpriteCss("Find16").ImagePosition(ImagePositions.Left).ClientSideOnClick("InvokeClick").ButtonStyle(ButtonStyles.Split)
+                                            .Items(items =>
+                                                {
+                                                    items.Add().Text("Find").SpriteCSS("Find16");
+                                                    items.Add().Text("Find Next").SpriteCSS("FindNext");
+                                                    items.Add().Text("Low Importance").SpriteCSS("low_importance");
+                                                });
+                                        b.Add().Id("replace").Text("Replace").Height(25).SpriteCss("Replace16").ImagePosition(ImagePositions.Left);
+                                        b.Add().Id("select").Text("Select").Height(25).ArrowPosition(ArrowPositions.Right).SpriteCss("Select").ImagePosition(ImagePositions.Left).ButtonStyle(ButtonStyles.Split)
+                                            .Items(items =>
+                                                {
+                                                    items.Add().Text("Select").SpriteCSS("Select16");
+                                                    items.Add().Text("Select All").SpriteCSS("selectall");
+                                                });
+                                    });
+                            });
+                    });
+            });
+    }).Render();}
+    <script type="text/javascript">
+        function InvokeClick(sender, args) {
+            if (args._currentText == "Cut")
+                alert("Press CTRL + X to Cut ");
+            if (args._currentText == "Copy")
+                alert("Press CTRL + C to Copy");
+            if (args._currentText == "Paste")
+                alert("Press CTRL + V to paste");
+        }
+  </script>
+    <style type="text/css">
+    .buttonimage {
+    background-image:url("/Content/SyncfusionImages/sfRibbon.png");
+    background-repeat: no-repeat;
+    width: 17px; 
+    height: 17px;
+    }
+    .sprite-image
+    {
+    background-image:url("/Content/SyncfusionImages/sfRibbon.png");
+    background-repeat: no-repeat;
+    margin-left: 4px;
+    width: 20px; 
+    height: 17px;
+    }
+    .menuimage 
+    {
+    background-image:url("/Content/SyncfusionImages/sfRibbon.png");
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    width: 20px; 
+    height: 17px;
+    }
+    .Copy1 .buttonimage { background-position: 0 0; } 
+    .Cut1 .buttonimage { background-position: 0 -66px; } 
+    .Replace16 .buttonimage { background-position: 0 -264px; } 
+    .Select .buttonimage { background-position: 0 -396px; } 
+    .Select16 .buttonimage { background-position: 0 -396px; }
+    .Find16 .buttonimage { background-position: 0 -132px; } 
+    .Select16 { background-position: 0 -396px; } 
+    .selectall { background-position: 0 -726px; } 
+    .Find16 { background-position: 0 -132px; } 
+    .FindNext { background-position: 0 -198px; } 
+    .low_importance { background-position: 0 -594px; } 
+    .Save16 { background-position: 0 -330px; } 
+    .saveas16 { background-position: 0 -660px; } 
+    .folder { background-position: 0 -462px; } 
+    .folderclosed { background-position: 0 -528px; } 
+    </style>
+    </div>
+    <div>
+      <h2>Splitter</h2>
+        <br /><br />
+        @{Html.Syncfusion().Splitter("splitter").Orientation(SplitterOrientation.Horizontal).Height(400).Width(700)
+        .SplitterPanes(panes =>
+        {
+           panes.Add().Resizable(true).Scrollable(true)
+          .PaneSize(System.Web.UI.WebControls.Unit.Percentage(30))
+          .ContentTemplate(
+                @<p>
+                    Outer first Pane</p>
+                ).SplitterBar(bar => bar.AllowSplitterBar(true).CollapseMode(CollapseType.Both));
+           panes.Add().PaneSize(System.Web.UI.WebControls.Unit.Percentage(20))
+           .ContentTemplate(() =>
+           Html.Syncfusion().Splitter("innerSplitter", new { style = "border: 0" }).Height(System.Web.UI.WebControls.Unit.Percentage(100)).Width(System.Web.UI.WebControls.Unit.Percentage(100)).Orientation(SplitterOrientation.Vertical)
+                           .SplitterPanes(panes1 =>
+                           {
+                               panes1.Add().PaneSize(System.Web.UI.WebControls.Unit.Percentage(50)).Scrollable(true).Resizable(true)
+                                           .ContentTemplate(
+                @<p>
+                    Inner first pane</p>
+                    ).SplitterBar(b => b.AllowSplitterBar(true).CollapseMode(CollapseType.Both));
+                               panes1.Add().PaneSize(System.Web.UI.WebControls.Unit.Percentage(30))
+                                           .ContentTemplate(
+                @<p>
+                    Inner second pane</p>
+             );
+         }).ToString()
+       );
+     }).Render();}
+    </div>
+      <div>
+      <h2>GalleryView</h2>
+        <br /><br />
+        @{Html.Syncfusion().GalleryView("gallery").Items(item1 =>
+                                      {
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading1.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading2.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading3.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Intense.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading1.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading2.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Heading3.png"));
+                                          item1.Add().ImageUrl(@Url.Content("~/Content/SyncfusionImages/GalleryView/Intense.png"));
+                                      }).ExtraItem(extraItem =>
+                                      {
+                                          extraItem.Add().Text("Save Selection as new quick style");
+                                          extraItem.Add().Text("Clear Formatting");
+                                          extraItem.Add().Text("Apply Styles");
+                                      }).PopUpHeight(System.Web.UI.WebControls.Unit.Pixel(100)).ItemToShow(5).Width(System.Web.UI.WebControls.Unit.Pixel(200))
+                                                .Render();}
+    </div>
+    <div>
+      <h2>UploadBox</h2>
+      <br /><br />
+      <div id="browse">
+        @{Html.Syncfusion().UploadBox("upload").AllowMultipleFiles(true)
+        .AsyncUpload(
+        a =>
+        a.SaveAction("Save", "Tools")
+        .RemoveAction("Remove", "Tools")
+        ).Render();}
+      </div>
+    </div>
+    <div>
+      <h2>Progressbar</h2>
+      <br /><br />
+      @{Html.Syncfusion().ProgressBar("Progress").Height(22).Width(700).Value(50).Render();}
+    </div> 
+    <div>
+      <h2>Rating</h2>
+        <br /><br />
+        @Html.Syncfusion().Rating("myRating")
+    </div>
+<br /><br />
+    <div style="height:100px">
+      <h2>Rotator</h2>
+      @Html.Syncfusion().Rotator("rotatoritems").Height(100).Width(110).ItemHeight(100).ItemWidth(110).Circular(true)
+      <ul id="rotatoritems" class="visibleHide">
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/1.jpg")' width="110" height="100"/></li>
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/2.jpg")' width="110" height="100"/></li>
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/3.jpg")' width="110" height="100"/></li>
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/4.jpg")' width="110" height="100"/></li>
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/5.jpg")' width="110" height="100"/></li>
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/6.jpg")' width="110" height="100"/></li>
+        <li>
+            <img src='@Url.Content("~/Content/SyncfusionImages/Rotator/7.jpg")' width="110" height="100"/></li>
+      </ul>
+    </div>
+<br/>
+            <div>
+              <h2>Accordion</h2>
+              <br />
+              <div class="outer">
+                @Html.Syncfusion().Accordion("myAccordion")
+              </div>
+              <br />
+              <div id="myAccordion" class="visibleHide">
+                <h3>
+                  <a href="#">About Syncfusion</a>
+                </h3>
+                <div>
+                  Syncfusion, a world leader in software components have thousands of satisfied customers
+                  world-wide who have used our products to ship award winning software.
+                </div>
+                <h3>
+                  <a href="#">Technology</a>
+                </h3>
+                <div>
+                  Syncfusion products are smartly designed to cope with the fast-changing technology
+                  environment.
+                </div>
+                <h3>
+                  <a href="#">Contact Us</a>
+                </h3>
+                <div>
+                  Company Headquarters<br />
+                  <br />
+                  2501 Aerial Center Parkway<br />
+                  Suite 200<br />
+                  Morrisville, NC 27560<br />
+                  USA.
+                </div>
+              </div>
+              <style type="text/css">
+                .outer
+                {
+                width:400px;
+                }
+              </style>
+            </div>
+<!--Dialog###-->
+            <div>
+              <h2>Slider</h2>
+              <br /><br />
+              <div class="outer">
+               @Html.Syncfusion().Slider("slider").Minimum(0).Maximum(100).Step(2) </div>
+              <br /><br />
+              <style type="text/css">
+              .outer
+              {
+              width:400px;
+              }
+              </style>
+            </div>
+           <div>
+              <h2>DatePicker</h2>
+              <br />
+              @Html.Syncfusion().DatePicker("myDatePicker")
+              <br /><br />
+          </div>
+    <div>
+      <h2>Tab</h2>
+      <div style="height:100px">
+        <div class="Target">
+          @Html.Syncfusion().Tab("tabContents", "Tab")</div>
+      </div>
+      <div class="outer">
+      <div id="tabContents">
+       <ul>
+          <li><a href="#tools">Essential Tools</a></li>
+          <li><a href="#chart">Essential Chart</a></li>
+          <li><a href="#grid">Essential Grid</a></li>
+       </ul>
+       <div id="tools">
+            Essential Tools is a collection of user interface components used to create interactive
+            ASP.NET MVC applications.
+       </div>
+       <div id="chart">
+            Essential Chart is a business-oriented charting component. Essential Chart features
+            an advanced styles architecture that makes complex multi-level formatting very easy.
+       </div>
+       <div id="grid">
+            Essential MVC Grid offers a full-featured grid control with extensive support for
+            grouping and displaying hierarchical data.
+       </div>
+      </div>
+    </div>
+    <style type="text/css">
+        .outer
+        {
+           width:400px;
+        }
+        .Target
+        {
+            float: left;
+        }
+      </style>
+     </div>
+</div>

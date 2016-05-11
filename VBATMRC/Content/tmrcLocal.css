@@ -1,0 +1,139 @@
+﻿body {
+}
+table{
+
+    empty-cells:show;
+    
+}
+
+
+
+ #tbl-index td{
+
+        width:50%;
+    }
+    #tbl-index th{
+
+        background-color:silver;
+    }
+    #tbl-index, #tbl-itc, #tbl-lync, #tbl-refs, #tbl-skills, #tbl-links, #tbl-cc, #tbl-tmja, #tbl-temps{
+
+        align-self:center;
+        align-content:center;
+        width:100%;
+        
+
+        /*border-collapse:collapse;*/
+    }
+
+#tbl-index th a:link, #tbl-index td a:link,#tbl-itc th a:link, 
+#tbl-itc td a:link,#tbl-lync th a:link, #tbl-lync td a:link,
+#tbl-refs th a:link, #tbl-refs td a:link,
+#tbl-skills th a:link, #tbl-skills td a:link,
+#tbl-links th a:link, #tbl-links td a:link,#tbl-cc th a:link, 
+#tbl-cc td a:link, #tbl-tmja th a:link, #tbl-tmja td a:link, #tbl-temps td a:link, #tbl-temps th a:link
+{
+          color:blue;
+       
+    }
+
+    #tbl-index th,#tbl-itc th, 
+    #tbl-lync th, #tbl-refs th,
+     #tbl-skills th, #tbl-links th, #tbl-cc th, #tbl-tmja th, #tbl-temps th
+    {
+        text-align:center;
+        border: 1px solid silver;
+        border-top:1px solid silver;
+        border-bottom: 1px solid silver;
+        width:35%;
+        vertical-align:top;
+        background-image: url(../../Images/pattern.png);
+        
+    }
+
+       #tbl-index td, #tbl-itc td,
+    #tbl-lync td, #tbl-refs td,
+     #tbl-skills td, #tbl-links td, #tbl-cc td, #tbl-tmja td, #tbl-temps td
+    {
+        text-align:center;
+        border: 1px solid silver;
+        border-top:1px solid silver;
+        border-bottom: 1px solid silver;
+        width:35%;
+        vertical-align:top;
+
+        
+    }
+
+
+    .table_header2
+    {
+        text-align:center;
+        border: 1px solid silver;
+        border-top:1px solid silver;
+        border-bottom: 1px solid silver;
+        width:65%;
+        margin-top: -39px;
+        float:right;
+
+    }
+    #tbl-itc td, #tbl-lync td,#tbl-refs td,#tbl-skills td, #tbl-links td, #tbl-cc td, #tbl-tmja td, #tbl-temps td{
+
+        text-align:left;
+       
+        padding-left:4px;
+    }
+   
+
+    #tbl-itc #itc-last-cell, #tbl-lync #lync-last-cell ,  #tbl-refs #refs-last-cell,
+     #tbl-skills #skills-last-cell,#tbl-links #links-last-cell, #tbl-cc #cc-last-cell, #tbl-tmja #tmja-last-cell, #tbl-temps #temps-last-cell{
+        border: 1px solid silver;
+        border-top:1px solid silver;
+        border-bottom:1px solid silver;
+        background-color:#ffffff;
+        text-align:right;
+        width:100%;
+        height:30px;
+        
+    }
+    #tbl-itc #itc-last-cell a:hover,
+    #tbl-lync #lync-last-cell a:hover,
+    #tbl-refs #refs-last-cell a:hover,
+    #tbl-skills #skills-last-cell a:hover,
+    #tbl-links #links-last-cell a:hover,
+    #tbl-cc #cc-last-cell a:hover, #tbl-tmja #tmja-last-cell a:hover, #tbl-temps #temps-last-cell a:hover
+    {
+
+ 
+        text-decoration:none;
+
+    }
+
+    #tbl-itc th, #tbl-lync th, #tbl-refs th, #tbl-skills th,#tbl-links th, #tbl-cc th, #tbl-tmja th, #tbl-temps th{
+
+        background-color:lightyellow;
+        
+    }
+
+  
+    #tbl-itc #itc-last-cell td,
+    #tbl-lync #lync-last-cell td,
+    #tbl-refs #refs-last-cell td,
+    #tbl-skills #skills-last-cell td,  
+     #tbl-links #links-last-cell td,
+    #tbl-cc #cc-last-cell td,
+    #tbl-tmja #tmja-last-cell td,
+    #tbl-temps #temps-last-cell td
+    {
+        border:none;
+        text-align:right;
+      
+    }
+.table_header {
+cursor:pointer;
+}
+.toggler {
+cursor: pointer;
+}
+
+

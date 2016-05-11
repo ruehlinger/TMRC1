@@ -1,0 +1,170 @@
+﻿@using System
+@*@using Syncfusion.Mvc.Shared*@
+@using VBATMRC.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon"
+          type="image/x-icon" />
+
+    @Styles.Render("~/bundles/bscss")
+    @*@Styles.Render("~/bundles/calcss")*@
+    <!--[if lte IE 9]>
+            <link href="~/Scripts/boxsizing.htc" rel="text/x-component">
+            <script src="~/Scripts/html5shiv.js"></script>
+        <![endif]-->
+    @{
+        ViewBag.SiteTitle = "VBA Training Manager Resource Center";
+        ViewBag.Version = "v.7.1a";
+        ViewBag.LastUpdate = "March 29 2016";
+
+
+        var browser = Request.Browser;
+        ViewBag.Browser = browser;
+        var nogo = (browser.Browser == "IE" && browser.Version == "7.0");
+        if (nogo)
+        {
+            @Styles.Render("~/bundles/css-ie7");
+        @Styles.Render("~/bundles/bscss-ie7");
+        }
+        else if (browser.Browser == "IE" && browser.Version == "8.0")
+        {
+            @Styles.Render("~/bundles/css");
+        @Styles.Render("~/bundles/css-ie8");
+        }
+        else
+        {
+            @Styles.Render("~/bundles/css");
+        }
+    }
+
+
+
+
+    @*@Styles.Render("http://nttlsrv01/VBAResourceStore/Content/site.css");*@
+
+    @RenderSection("styles", required: false)
+
+
+
+    @*@(Html.Syncfusion().StyleManager().Combine(false).Minify(false)
+        .Register(component =>
+            {
+                component.Add(ComponentType.Grid);
+                component.Add(ComponentType.Chart);
+                component.Add(ComponentType.Accordion);
+                component.Add(ComponentType.Schedule);
+
+            })
+    )*@
+
+
+</head>
+<body>
+    <header>
+        <div class="content-wrapper container">
+            <div class="pull-left col-md-7 col-xs-7 site-logo-block ">
+                <div id="logoVBA" class="pull-left"
+                     title="Go to va.gov" data-toggle="tooltip">
+                    <a href="http://www.va.gov" style="background: none;">
+                        <img src="~/Images/logo.png" style="border: none;"
+                             alt="Official seal of the United States Department of Veterans Affairs" />
+                    </a>
+                </div>
+
+                <div class="vert-line"></div>
+                <h1 class="site-title"><a href="~/" data-toggle="tooltip" title="@ViewBag.SiteTitle Home">@ViewBag.SiteTitle</a></h1>
+                <div id="logoEDT">
+                    <img src="~/Images/logoEDT00.png" style="border: none" alt="" />
+                </div>
+
+            </div>
+            <!-- SEARCH BOX  -->
+            <div class="pull-right hidden-xs searchbox" role="search">
+                @{
+                    if (ViewBag.Dev && !nogo)
+                    {
+                        <div class="input-group">
+                            <input type="text" name="searchInput" class="form-control" placeholder="Search" />
+                            <div id="btnSearch" class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                        </div>
+                    }
+                    if (!nogo)
+                    {
+                        <div class="navLp">
+                            <a id="navLearningPortal" href="https://www.ttande.org/vbalearningportal/" target="_blank" title="Navigate to VBA Learning Portal" class="btn btn-xs btn-info pull-right"><span class=" glyphicon glyphicon-book"></span></a>
+                        </div>
+                    }
+                    if (ViewBag.DisplayMegaphone == "true" && !nogo)
+                    {
+                        <div style="margin-top: 55px;">
+                            <a id="newsBalloonRestore" href="#newsBalloon" title="Toggle announcements balloon" class="btn btn-xs btn-info pull-right" data-toggle="collapse"><span class="glyphicon glyphicon-bullhorn"></span></a>
+                        </div>}
+                }
+            </div>
+            <!--END SEARCH BOX -->
+
+        </div>
+    </header>
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix container">
+            @if (!nogo)
+            {
+                @RenderBody();
+            }
+            else
+            {
+                Html.RenderPartial("_NonCompliant", new Announcements());
+            }
+        </section>
+
+        @* @RenderSection("featured", required: false)*@
+
+    </div>
+
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>
+                    &copy; @DateTime.Now.Year - @ViewBag.Title - Last updated: @ViewBag.LastUpdate
+                </p>
+            </div>
+            <div class="float-right">
+                <p>@ViewBag.Version @*(Your browser: @ViewBag.Browser.Browser-@ViewBag.Browser.Version)*@</p>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/respond")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+    @Scripts.Render("~/bundles/cal")
+
+    @Scripts.Render("~/bundles/accord")
+
+
+    @*@{Html.Syncfusion().ScriptManager().Combine(true).Minify(true).Render();}*@
+
+    <script type="text/javascript">
+        $(function () {
+            $('#page').css("min-height", $(document).height());
+        });
+    </script>
+   <!-- <script type="text/javascript">
+        $(function () {
+            $('#js-news').ticker();
+        });
+    </script>-->
+    @Scripts.Render("~/bundles/sitejs")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

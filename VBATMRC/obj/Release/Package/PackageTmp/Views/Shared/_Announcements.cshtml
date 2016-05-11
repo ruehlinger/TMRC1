@@ -1,0 +1,29 @@
+﻿@model VBATMRC.Models.Announcement
+
+<section id="newsBalloon" class="featured  collapse in">
+    <div class="content-wrapper BalloonConstrain">
+        <div class="presentationPanel00">
+            <div class="well-sm well-nav class_box_shadow gradientLightBlue90">
+                <a id="newsBalloonRemove" class="btn btn-xs btn-info pull-right" data-toggle="collapse" href="#newsBalloon" title="Click to close, to re-open click megaphone icon (above right)"><span class="glyphicon glyphicon-remove"></span></a>
+                <div class="container row" style="width: inherit !important; height: 90px;">
+                    <div id="icoTileAnnouncement" class="pull-left"></div>
+                    <div class="newsBalloon">
+                        <div id="NewsRotator" style="width: 90%; height: 100px;">
+                            <p id="title"></p>
+                            <p id="copy"></p>
+                            <p id="path" style="display: none;"></p>
+                            <a id="action" href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="newsControls">
+                        <a id="btnNextAnnouncement" class="btn btn-xs btn-info pull-right" href="#" title="Next"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                        <a id="btnPause" class="btn btn-xs btn-info pull-right" href="#" title="Pause"><span class="glyphicon glyphicon-pause"></span></a>
+                        <a id="btnPlay" class="btn btn-xs btn-info pull-right" href="#" title="Play"><span class="glyphicon glyphicon-play"></span></a>
+                        <a id="btnPrevAnnouncement" class="btn btn-xs btn-info pull-right" href="#" title="Previous"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
